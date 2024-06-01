@@ -1,68 +1,72 @@
-:root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
-
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-a {
-  font-weight: 500;
-  color: #646cff;
-  text-decoration: inherit;
-}
-a:hover {
-  color: #535bf2;
-}
-
-body {
-  margin: 0;
-  display: flex;
-  place-items: center;
-  min-width: 320px;
-  min-height: 100vh;
-}
-
-h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
-}
-
-button {
-  border-radius: 8px;
-  border: 1px solid transparent;
-  padding: 0.6em 1.2em;
-  font-size: 1em;
-  font-weight: 500;
-  font-family: inherit;
-  background-color: #1a1a1a;
-  cursor: pointer;
-  transition: border-color 0.25s;
-}
-button:hover {
-  border-color: #646cff;
-}
-button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
-}
-
-@media (prefers-color-scheme: light) {
+@layer base {
   :root {
-    color: #213547;
-    background-color: #ffffff;
+    /* replace the values here later */
+    --card: 0 0% 100%;
+    --card-foreground: 240 10% 3.9%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 240 10% 3.9%;
+    --secondary-foreground: 240 5.9% 10%;
+    --input: 240 5.9% 90%;
+    
+    /*  accepted */
+    --background: 0deg 0% 100%;
+    --foreground: 240deg 10% 3.9%;
+
+    --muted: 240deg 10.87% 18.04%;
+    --muted-foreground: 240 3.8% 46.1%;
+    
+    --secondary: 240deg 3.77% 58.43%; /* for header icons */
+    
+    --accent: 151.09deg 74.32 29.02; /* green */
+    --accent-foreground: 0 0% 98%;
+
+    --brand-primary: 11.15deg 96.58% 45.88%;
+    --brand-secondary: 28.34deg 92.89% 50.39%
+
+    --destructive: 0deg 62.8% 30.6%;
+    --destructive-foreground: 0deg 0% 98%;
+    
+    --neutral: 240deg 11% 15%;
+    --neutral-100: 240deg 14.81% 10.59%;
+    --neutral-foreground-100: 240deg 4% 58%;
+    --neutral-foreground-200: 240deg 12.28% 88.82%;
+    --neutral-foreground-300: 0deg 0% 100%;
   }
-  a:hover {
-    color: #747bff;
-  }
-  button {
-    background-color: #f9f9f9;
+
+  .dark {
+    /* replace the values here later */
+    --card: 240deg 10% 3.9%;
+    --card-foreground: 0 0% 98%;
+    --popover: 240deg 10% 3.9%;
+    --popover-foreground: 0 0% 98%;
+    --secondary-foreground: 0 0% 98%;
+    --input: 240deg 3.7% 15.9%;
+    
+    /*  accepted */
+    --background: 240deg 10% 3.9%;
+    --foreground: 0deg 0% 98%;
+    
+    --secondary: 0deg 0.22% 46.5%;
+    
+    --accent: 151.09deg 74.32 29.02;
+    --accent-foreground: 0deg 0% 98%;
+    --muted: 240deg 3.7% 15.9%;
+    --muted-foreground: 240deg 5% 64.9%;
+
+    --brand-primary: 11.15deg 96.58% 45.88%;
+    --primary-foreground: 0deg 0% 100%;
+
+    --destructive: 0deg 62.8% 30.6%;
+    --destructive-foreground: 0deg 0% 98%;
+
+    --neutral: 240deg 11% 15%;
+    --neutral-100: 240deg 14.81% 10.59%;
+    --neutral-foreground-100: 240deg 4% 58%;
+    --neutral-foreground-200: 240deg 12.28% 88.82%;
+    --neutral-foreground-300: 0deg 0% 100%;
   }
 }
