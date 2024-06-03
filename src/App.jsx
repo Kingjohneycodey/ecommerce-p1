@@ -2,7 +2,7 @@ import { RouterProvider } from 'react-router-dom'
 import routes from './router'
 
 function App() {
-  // wrap all providers here
+  // we can wrap all other providers here I guess
   return <RouterProvider router={routes} />
 }
 

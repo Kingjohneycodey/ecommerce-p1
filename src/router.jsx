@@ -1,5 +1,5 @@
 import { createBrowserRouter } from 'react-router-dom'
-import RootLayout from './components/root-layout'
+import RootLayout from './components/layout/root-layout'
 import Home from './pages/home'
 
 const routes = createBrowserRouter([
@@ -8,7 +8,7 @@ const routes = createBrowserRouter([
     element: <RootLayout />,
     children: [
       { index: true, element: <Home /> },
-      { index: '/others', element: <div>Other page</div> },
+      { path: '/others', element: <div>Other page</div> },
     ],
   },
 ])
