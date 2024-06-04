@@ -42,7 +42,7 @@ export default function Slid() {
         navigation
         pagination={{ clickable: true }}
         autoplay={{
-          delay: 5000,
+          delay: 5100,
           disableOnInteraction: false,
           stopOnLastSlide: false,
         }}
