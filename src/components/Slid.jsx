@@ -52,7 +52,7 @@ export default function Slid() {
         {data.map((user) => (
           <SwiperSlide key={user.id}>
             <div className="w-[100%] ">
-              <img src={user.image} />
+              <img src={user.image} className="w-full" />
             </div>
           </SwiperSlide>
         ))}
