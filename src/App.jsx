@@ -1,10 +1,10 @@
 import "./App.css";
-import Slid from "./components/Slid";
+import Slids from "./components/Slid";
 
 function App() {
   return (
     <>
-      <Slid />
+      <Slids />
     </>
   );
 }

@@ -33,7 +33,7 @@ const data = [
   },
 ];
 
-export default function Slid() {
+export default function Slids() {
   return (
     <div>
       <Swiper
