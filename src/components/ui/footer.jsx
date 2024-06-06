@@ -79,7 +79,7 @@ export function Footer() {
         </div>
       </section>
 
-      <section className="flex items-start justify-between px-4 md:px-8 lg:px-12">
+      <section className="flex items-start justify-between px-4 py-8 md:px-8 lg:px-12">
         <ul>
           <h5>BASIC NAVIGATIONS</h5>
           {footerLinks.basicNav.map((n) => (
