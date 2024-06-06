@@ -32,7 +32,7 @@ export function Footer() {
                 Subscribe to our newsletter for regular
                 updates about offers, Coupons & more
               </label>
-              <div className="flex items-stretch gap-4">
+              <div className="flex flex-wrap items-stretch gap-4">
                 <input
                   className="box-border flex-1 border border-neutral-foreground-100 bg-transparent px-4 py-2"
                   type="email"
@@ -40,7 +40,7 @@ export function Footer() {
                 />
                 <Button
                   type="submit"
-                  className="h-[unset] rounded-none lg:px-10"
+                  className="h-[unset] rounded-none max-[380px]:w-full lg:px-10"
                 >
                   Subscribe
                 </Button>
