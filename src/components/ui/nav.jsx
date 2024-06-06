@@ -6,7 +6,10 @@ export default function Nav() {
   return (
     // desktop nav
     <nav>
-      <ul className="flex items-center">
+      <ul
+        className="mx-auto flex max-w-[600px] items-center overflow-x-auto"
+        style={{ scrollbarWidth: 'none' }}
+      >
         {navLinks.map((link) => (
           <li key={link.name}>
             <NavLink
@@ -24,7 +27,6 @@ export default function Nav() {
           </li>
         ))}
       </ul>
-      <div className="h-1 bg-gray-200" />
     </nav>
   )
 }

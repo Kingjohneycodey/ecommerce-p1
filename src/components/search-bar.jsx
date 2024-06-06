@@ -3,7 +3,7 @@ import { Input } from './ui/input'
 
 export function SearchBar() {
   return (
-    <form className="relative flex-1 lg:max-w-md">
+    <form className="relative flex-1 lg:mx-auto lg:max-w-md">
       <Input
         type="text"
         placeholder="I am shopping for..."

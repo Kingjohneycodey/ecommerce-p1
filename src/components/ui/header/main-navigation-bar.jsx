@@ -19,7 +19,7 @@ export function MainNavigationBar() {
   const [searchOpen, setSearchOpen] = useState(false)
 
   return (
-    <div className="relative flex min-h-12 items-center justify-between gap-4 bg-background px-4 py-4 max-lg:overflow-hidden md:px-8 lg:px-10">
+    <div className="relative flex max-h-14 min-h-12 items-center justify-between gap-4 bg-background px-4 py-4 max-lg:overflow-hidden md:px-8 lg:px-10">
       <Logo />
 
       {/* desktop search */}
