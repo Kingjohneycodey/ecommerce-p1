@@ -3,15 +3,18 @@ import { footerLinks } from '@/lib/data'
 
 import { Logo } from '../logo'
 import { Button } from './button'
+import { cn } from '@/lib/utils'
+import { useState } from 'react'
+import { MinusIcon, PlusIcon } from 'lucide-react'
 
 export function Footer() {
   return (
-    <footer className="flex flex-col bg-neutral text-sm text-neutral-foreground-100 [&_h5]:my-3 [&_h5]:font-semibold [&_li>h6]:text-xs [&_li>h6]:text-neutral-foreground-100 [&_li]:mb-2 [&_li]:text-neutral-foreground-200 [&_ul]:py-2">
-      <section className="border-b border-b-neutral-foreground-100/30 px-4 py-6 md:px-8 lg:px-12">
+    <footer className="flex flex-col bg-neutral text-sm text-neutral-foreground-100 [&_h5]:font-semibold lg:[&_h5]:my-3 [&_li>h6]:text-xs [&_li>h6]:text-neutral-foreground-100 [&_li]:text-neutral-foreground-200 lg:[&_li]:mb-2 lg:[&_ul]:py-2">
+      <section className="border-b border-b-neutral-foreground-100/30 px-8 py-6 md:px-10 lg:px-16">
         <div className="mb-4">
           <Logo />
         </div>
-        <div className="flex justify-between">
+        <div className="flex flex-wrap justify-between gap-6">
           <div>
             <p className="mb-4 text-sm">
               Join out community of buyers and sellers,
@@ -37,7 +40,7 @@ export function Footer() {
                 />
                 <Button
                   type="submit"
-                  className="h-[unset] rounded-none px-10"
+                  className="h-[unset] rounded-none lg:px-10"
                 >
                   Subscribe
                 </Button>
@@ -79,9 +82,8 @@ export function Footer() {
         </div>
       </section>
 
-      <section className="flex items-start justify-between px-4 py-8 md:px-8 lg:px-12">
-        <ul>
-          <h5>BASIC NAVIGATIONS</h5>
+      <section className="flex flex-col items-start justify-between md:px-8 lg:flex-row lg:px-16">
+        <ItemsGroup title="basic navigations">
           {footerLinks.basicNav.map((n) => (
             <li key={n.title}>
               {n.href.startsWith('http') ? (
@@ -101,10 +103,9 @@ export function Footer() {
               )}
             </li>
           ))}
-        </ul>
+        </ItemsGroup>
 
-        <ul className="space-y-3">
-          <h5>CONTACTS</h5>
+        <ItemsGroup title="contacts">
           {footerLinks.contacts.map((c) => (
             <li key={c.title}>
               <h6 className="mb-1">{c.title}</h6>
@@ -122,35 +123,45 @@ export function Footer() {
               </p>
             </li>
           ))}
-        </ul>
+        </ItemsGroup>
 
-        <div>
-          <h5>MY ACCOUNT</h5>
-          <ul>
-            {footerLinks.account.map((a) => (
-              <li key={a.title}>
-                <Link
-                  className="animated-underline"
-                  to={a.href}
-                >
-                  {a.title}
-                </Link>
-              </li>
-            ))}
-          </ul>
-        </div>
+        <ItemsGroup title="my account">
+          {footerLinks.account.map((a) => (
+            <li key={a.title}>
+              <Link
+                className="animated-underline"
+                to={a.href}
+              >
+                {a.title}
+              </Link>
+            </li>
+          ))}
+        </ItemsGroup>
 
-        <div>
+        <div className="hidden lg:block">
           <h5>SELLER ZONE</h5>
           <ul>
             {footerLinks.seller.map((s) => (
               <li key={s.title}>
-                <Link
-                  className="animated-underline"
-                  to={s.href}
-                >
-                  {s.title}
-                </Link>
+                {s.title.toLowerCase() ===
+                'become a seller' ? (
+                  <span className="flex items-center gap-4">
+                    {s.title}{' '}
+                    <Link
+                      to={s.href}
+                      className="text-accent"
+                    >
+                      Apply Now
+                    </Link>
+                  </span>
+                ) : (
+                  <Link
+                    className="animated-underline"
+                    to={s.href}
+                  >
+                    {s.title}
+                  </Link>
+                )}
               </li>
             ))}
           </ul>
@@ -171,9 +182,50 @@ export function Footer() {
             </ul>
           </div>
         </div>
+
+        <div className="w-full lg:hidden">
+          <ItemsGroup title="seller zone">
+            {footerLinks.seller.map((s) => (
+              <li key={s.title}>
+                {s.title.toLowerCase() ===
+                'become a seller' ? (
+                  <span className="flex items-center gap-4">
+                    {s.title}{' '}
+                    <Link
+                      to={s.href}
+                      className="text-accent"
+                    >
+                      Apply Now
+                    </Link>
+                  </span>
+                ) : (
+                  <Link
+                    className="animated-underline"
+                    to={s.href}
+                  >
+                    {s.title}
+                  </Link>
+                )}
+              </li>
+            ))}
+          </ItemsGroup>
+
+          <ItemsGroup title="delivery boy">
+            {footerLinks.delivery.map((d) => (
+              <li key={d.title}>
+                <Link
+                  className="animated-underline"
+                  to={d.href}
+                >
+                  {d.title}
+                </Link>
+              </li>
+            ))}
+          </ItemsGroup>
+        </div>
       </section>
 
-      <section className="flex items-end justify-between bg-neutral-100 px-4 pb-12 pt-8 text-neutral-foreground-300 md:px-8 lg:px-12">
+      <section className="flex flex-col-reverse items-center justify-between gap-8 bg-neutral-100 px-8 pb-20 pt-8 text-center text-neutral-foreground-300 md:flex-row md:items-end md:px-8 md:text-left lg:px-16">
         <div className="space-y-6">
           <p>&copy; 2023 E-COMMERCE | B2B &B2C</p>
           <p>
@@ -189,12 +241,55 @@ export function Footer() {
 
         <div>
           <img
-            className="w-36"
+            className="w-44"
             src="/icons/payment.webp"
             alt="payment methods"
           />
         </div>
       </section>
     </footer>
+  )
+}
+
+function ItemsGroup({ title, children }) {
+  const [isOpen, setIsOpen] = useState(false)
+
+  function toggleOpen() {
+    setIsOpen((prev) => !prev)
+  }
+
+  return (
+    <div className="max-lg:w-full max-lg:border-b max-lg:border-b-neutral-foreground-100/30">
+      <h5
+        onClick={toggleOpen}
+        className="capitalize max-lg:flex max-lg:w-full max-lg:items-center max-lg:justify-between max-lg:bg-neutral-100 max-lg:px-8 max-lg:py-8 lg:uppercase"
+      >
+        <span>{title}</span>
+        <span
+          className={cn(
+            'transition-transform lg:hidden',
+            isOpen ? 'rotate-0' : 'rotate-[360deg]'
+          )}
+        >
+          {isOpen ? <MinusIcon /> : <PlusIcon />}
+        </span>
+      </h5>
+      <div
+        className={cn(
+          'transition-[max-height] ease-out max-lg:overflow-hidden max-lg:px-8 max-lg:py-0',
+          isOpen
+            ? 'max-h-96 duration-[2.5s]'
+            : 'tran duration-400 max-h-0'
+        )}
+      >
+        <ul
+          className={
+            'max-lg:space-y-2 max-lg:py-8 max-lg:[&_li]:border-b max-lg:[&_li]:border-b-neutral-foreground-100/20 max-lg:[&_li]:py-2'
+          }
+        >
+          {children}
+        </ul>
+      </div>
+    </div>
   )
 }

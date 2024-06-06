@@ -153,7 +153,7 @@ export const footerLinks = {
     },
   ],
   seller: [
-    { title: 'Become a Seller', href: '/seller/register' },
+    { title: 'Become a Seller', href: '/shops/create  ' },
     {
       title: 'Login to Seller Panel',
       href: '/seller/login',
@@ -161,7 +161,7 @@ export const footerLinks = {
   ],
   delivery: [
     {
-      title: 'Login too Delivery Boy Panel',
+      title: 'Login to Delivery Boy Panel',
       href: '/delivery/login',
     },
   ],
