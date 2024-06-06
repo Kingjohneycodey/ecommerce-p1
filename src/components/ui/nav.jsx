@@ -40,7 +40,7 @@ export function MobileNav({ isOpen, setIsOpen }) {
     <nav className="block lg:hidden">
       <div
         className={cn(
-          'fixed left-0 top-0 z-50 h-screen w-[70%] bg-white transition-all duration-300 md:w-3/5',
+          'fixed left-0 top-0 z-[100] h-screen w-[70%] bg-background transition-all duration-300 md:w-3/5',
           isOpen ? 'left-0' : '-left-full'
         )}
         onClick={(e) => e.stopPropagation()}

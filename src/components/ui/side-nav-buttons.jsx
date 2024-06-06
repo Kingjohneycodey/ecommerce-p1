@@ -5,8 +5,8 @@ export default function SideNavButtons() {
   return (
     <div
       className={cn(
-        'fixed top-1/2 z-[100] -translate-y-1/2',
-        'left-6'
+        'fixed top-1/2 z-[40] -translate-y-1/2',
+        'md:left-6'
       )}
     >
       <ul className="space-y-4">
