@@ -21,6 +21,8 @@ export default {
         brand: {
           primary:
             'hsl(var(--color-brand-primary) / <alpha-value>)',
+          'primary-foreground':
+            'hsl(var(--color-brand-primary-foreground) / <alpha-value>)',
           secondary:
             'hsl(var(--color-brand-secondary) /  <alpha-value>)',
         },

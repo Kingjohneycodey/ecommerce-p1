@@ -78,4 +78,91 @@ export const navLinks = [
   { name: 'All Brands', link: '/brands' },
   { name: 'All Categories', link: '/categories' },
   { name: 'All Sellers', link: '/sellers' },
+  { name: 'Blog', link: '/blog' },
 ]
+
+export const footerLinks = {
+  socials: [
+    {
+      title: 'facebook',
+      href: 'fb.com',
+      src: '/icons/fb.svg',
+    },
+    {
+      title: 'twitter',
+      href: 'x.com',
+      src: '/icons/twt.svg',
+    },
+    {
+      title: 'instagram',
+      href: 'instagram.com',
+      src: '/icons/ig.svg',
+    },
+    {
+      title: 'youtube',
+      href: 'ytoutube.com',
+      src: '/icons/yt.svg',
+    },
+    {
+      title: 'linkedin',
+      href: 'linkedin.com',
+      src: '/icons/lin.svg',
+    },
+  ],
+  apps: [
+    {
+      title: 'Google PlayStore',
+      href: 'google.com',
+      src: '/images/play.png',
+    },
+    {
+      title: 'App Store',
+      href: 'apple.com',
+      src: '/images/app.png',
+    },
+  ],
+  basicNav: [
+    { title: 'WhatsApp Us', href: '/' },
+    { title: 'Refer & Earn', href: '/referral' },
+    { title: 'Bid & Win', href: '/bid-n-win' },
+  ],
+  contacts: [
+    {
+      title: 'Address',
+      desc: 'Lorem ipsum, dolor sit - amet consectet UR',
+    },
+    {
+      title: 'Phone',
+      desc: '+234 912 345 6789',
+      href: 'tel:+2349123456789',
+    },
+    {
+      title: 'Email',
+      desc: 'support@ecommerce.com',
+      href: 'mailto:support@ecommerce.com',
+    },
+  ],
+  account: [
+    { title: 'Login', href: 'Login' },
+    { title: 'Order History', href: '/orders/history' },
+    { title: 'My Wishlist', href: '/wishlist' },
+    { title: 'Track Order', href: '/orders' },
+    {
+      title: 'Be an Affiliate Partner',
+      href: '/affiliate',
+    },
+  ],
+  seller: [
+    { title: 'Become a Seller', href: '/shops/create  ' },
+    {
+      title: 'Login to Seller Panel',
+      href: '/seller/login',
+    },
+  ],
+  delivery: [
+    {
+      title: 'Login to Delivery Boy Panel',
+      href: '/delivery/login',
+    },
+  ],
+}
