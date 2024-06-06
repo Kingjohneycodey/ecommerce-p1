@@ -1,12 +1,14 @@
-import "./App.css";
-import Slids from "./components/Slid";
+import { RouterProvider } from 'react-router-dom'
+import routes from './router'
+import Slids from './components/Slids';
 
 function App() {
-  return (
-    <>
-      <Slids />
-    </>
-  );
+  // we can wrap all other providers here I guess
+  return <>
+  <RouterProvider router={routes} />
+  <Slids/>
+  </>
 }
 
 export default App;
+ 

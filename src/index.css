@@ -1,3 +1,82 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+  :root {
+    /* replace the values here later */
+    --color-card: 0 0% 100%;
+    --color-card-foreground: 240 10% 3.9%;
+    --color-popover: 0 0% 100%;
+    --color-popover-foreground: 240 10% 3.9%;
+    --color-secondary-foreground: 240 5.9% 10%;
+    --color-input: 240 5.9% 90%;
+
+    /*  accepted */
+    --color-background: 0deg 0% 100%;
+    --color-foreground: 240deg 10% 3.9%;
+
+    --color-muted: 240deg 10.87% 18.04%;
+    --color-muted-foreground: 240 3.8% 46.1%;
+
+    --color-secondary: 240deg 3.77% 58.43%; /* for header icons */
+
+    --color-accent: 151.09deg 74.32 29.02; /* green */
+    --color-accent-foreground: 0 0% 98%;
+
+    --color-brand-primary: 11.15deg 96.58% 45.88%;
+    --color-brand-secondary: 28.34deg 92.89%
+      50.39%;
+    --color-destructive: 0deg 62.8% 30.6%;
+    --color-destructive-foreground: 0deg 0% 98%;
+
+    --color-neutral: 240deg 11% 15%;
+    --color-neutral-100: 240deg 14.81% 10.59%;
+    --color-neutral-foreground-100: 240deg 4% 58%;
+    --color-neutral-foreground-200: 240deg 12.28%
+      88.82%;
+    --color-neutral-foreground-300: 0deg 0% 100%;
+
+    --radix-accordion-content-height: 'max-content';
+  }
+
+  .dark {
+    /* replace the values here later */
+    --color-card: 250deg 35% 5%;
+    --color-card-foreground: 0 0% 98%;
+    --color-popover: 250deg 35% 5%;
+    --color-popover-foreground: 0 0% 98%;
+    --color-secondary-foreground: 0 0% 98%;
+    --color-input: 240deg 3.7% 15.9%;
+
+    /*  accepted */
+    --color-background: 250deg 35% 5%;
+    --color-foreground: 0deg 0% 98%;
+
+    --color-secondary: 0deg 0.22% 46.5%;
+
+    --color-accent: 151.09deg 74.32 29.02;
+    --color-accent-foreground: 0deg 0% 98%;
+    --color-muted: 240deg 3.7% 15.9%;
+    --color-muted-foreground: 240deg 5% 64.9%;
+
+    --color-brand-primary: 11.15deg 96.58% 45.88%;
+    --color-brand-secondary: 28.34deg 92.89%
+      50.39%;
+    --color-primary-foreground: 0deg 0% 100%;
+
+    --color-destructive: 0deg 62.8% 30.6%;
+    --color-destructive-foreground: 0deg 0% 98%;
+
+    --color-neutral: 240deg 11% 15%;
+    --color-neutral-100: 240deg 14.81% 10.59%;
+    --color-neutral-foreground-100: 240deg 4% 58%;
+    --color-neutral-foreground-200: 240deg 12.28%
+      88.82%;
+    --color-neutral-foreground-300: 0deg 0% 100%;
+  }
+}
+
+.header-action {
+  @apply text-xs font-medium tracking-wide opacity-60 transition hover:opacity-80;
+}
