@@ -262,7 +262,7 @@ function ItemsGroup({ title, children }) {
     <div className="max-lg:w-full max-lg:border-b max-lg:border-b-neutral-foreground-100/30">
       <h5
         onClick={toggleOpen}
-        className="capitalize max-lg:flex max-lg:w-full max-lg:items-center max-lg:justify-between max-lg:bg-neutral-100 max-lg:px-8 max-lg:py-8 lg:uppercase"
+        className="capitalize max-lg:flex max-lg:w-full max-lg:items-center max-lg:justify-between max-lg:bg-neutral-100 max-lg:px-8 max-lg:py-8 max-lg:text-neutral-foreground-200 lg:uppercase"
       >
         <span>{title}</span>
         <span
