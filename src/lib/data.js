@@ -1,3 +1,10 @@
+import {
+  ClockIcon,
+  GavelIcon,
+  MenuIcon,
+  ZapIcon,
+} from 'lucide-react'
+
 export const categories = [
   {
     id: 1,
@@ -79,6 +86,29 @@ export const navLinks = [
   { name: 'All Categories', link: '/categories' },
   { name: 'All Sellers', link: '/sellers' },
   { name: 'Blog', link: '/blog' },
+]
+
+export const sideLinks = [
+  {
+    name: 'All Categories',
+    link: '/categories',
+    icon: MenuIcon,
+  },
+  {
+    name: 'Flash Sale',
+    link: '/flash-sale',
+    icon: ZapIcon,
+  },
+  {
+    name: "Today's Deal",
+    link: '/deal',
+    icon: ClockIcon,
+  },
+  {
+    name: 'Auction',
+    link: '/auction',
+    icon: GavelIcon,
+  },
 ]
 
 export const footerLinks = {

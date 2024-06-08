@@ -16,10 +16,11 @@ import { useState } from 'react'
 import { cn } from '@/lib/utils'
 import { Button } from '../button'
 import { MobileNav } from '../nav'
+import { useNavContext } from '@/context/nav-context'
 
 export function MainNavigationBar() {
   const [searchOpen, setSearchOpen] = useState(false)
-  const [navOpen, setNavOpen] = useState(false)
+  const { navOpen, setNavOpen } = useNavContext()
 
   function toggleMobileNav() {
     setNavOpen((prev) => !prev)
