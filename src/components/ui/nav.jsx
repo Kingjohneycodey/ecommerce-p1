@@ -4,6 +4,7 @@ import { NavLink } from 'react-router-dom'
 import UserAuth from '../user-auth'
 import { Button } from './button'
 import { XIcon } from 'lucide-react'
+import { useNavContext } from '@/context/nav-context'
 
 export function DesktopNav() {
   return (
@@ -33,15 +34,17 @@ export function DesktopNav() {
   )
 }
 
-export function MobileNav({ isOpen, setIsOpen }) {
-  const close = () => setIsOpen(false)
+export function MobileNav() {
+  const { navOpen, setNavOpen } = useNavContext()
+
+  const close = () => setNavOpen(false)
 
   return (
     <nav className="block lg:hidden">
       <div
         className={cn(
-          'fixed left-0 top-0 z-50 h-screen w-[70%] bg-white transition-all duration-300 md:w-3/5',
-          isOpen ? 'left-0' : '-left-full'
+          'fixed left-0 top-0 z-[100] min-h-dvh w-[70%] bg-background transition-all duration-300 md:w-3/5',
+          navOpen ? 'left-0' : '-left-full'
         )}
         onClick={(e) => e.stopPropagation()}
       >
@@ -75,7 +78,7 @@ export function MobileNav({ isOpen, setIsOpen }) {
           ))}
         </ul>
       </div>
-      {isOpen && (
+      {navOpen && (
         <div
           className="fixed inset-0 z-40 bg-black/40"
           onClick={close}

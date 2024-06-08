@@ -16,10 +16,11 @@ import { useState } from 'react'
 import { cn } from '@/lib/utils'
 import { Button } from '../button'
 import { MobileNav } from '../nav'
+import { useNavContext } from '@/context/nav-context'
 
 export function MainNavigationBar() {
   const [searchOpen, setSearchOpen] = useState(false)
-  const [navOpen, setNavOpen] = useState(false)
+  const { navOpen, setNavOpen } = useNavContext()
 
   function toggleMobileNav() {
     setNavOpen((prev) => !prev)
@@ -27,13 +28,13 @@ export function MainNavigationBar() {
 
   return (
     <>
-      <div className="relative flex max-h-14 min-h-12 items-center justify-between gap-4 bg-background px-8 py-4 max-lg:overflow-hidden lg:px-16">
+      <div className="relative z-40 flex max-h-14 min-h-12 items-center justify-between gap-4 bg-background px-8 py-4 max-lg:overflow-hidden lg:px-16">
         <div className="flex gap-2">
           <Button
             size="icon"
             variant="ghost"
             onClick={toggleMobileNav}
-            className="block lg:hidden"
+            className="flex items-center justify-center lg:hidden"
           >
             <MenuIcon />
           </Button>

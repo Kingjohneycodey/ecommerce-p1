@@ -8,7 +8,7 @@ export function HeaderContainer() {
     <>
       <AdBanner />
       <TopBar />
-      <div className="sticky inset-x-0 top-0">
+      <div className="sticky inset-x-0 top-0 z-10">
         <MainNavigationBar />
         <ProductsNavigationBar />
       </div>

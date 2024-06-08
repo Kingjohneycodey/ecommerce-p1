@@ -9,7 +9,7 @@ import { MinusIcon, PlusIcon } from 'lucide-react'
 
 export function Footer() {
   return (
-    <footer className="flex flex-col bg-neutral text-sm text-neutral-foreground-100 [&_h5]:font-semibold lg:[&_h5]:my-3 [&_li>h6]:text-xs [&_li>h6]:text-neutral-foreground-100 [&_li]:text-neutral-foreground-200 lg:[&_li]:mb-2 lg:[&_ul]:py-2">
+    <footer className="flex flex-col bg-neutral text-sm text-neutral-foreground-100 *:-z-0 [&_h5]:font-semibold lg:[&_h5]:my-3 [&_li>h6]:text-xs [&_li>h6]:text-neutral-foreground-100 [&_li]:text-neutral-foreground-200 lg:[&_li]:mb-2 lg:[&_ul]:py-2">
       <section className="border-b border-b-neutral-foreground-100/30 px-8 py-6 md:px-10 lg:px-16">
         <div className="mb-4">
           <Logo />
