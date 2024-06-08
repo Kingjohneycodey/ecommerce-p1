@@ -1,0 +1,27 @@
+.ad {
+  margin-top: 20px;
+  margin-bottom: 80px;
+}
+
+.ads {
+  display: flex;
+
+  gap: 20px;
+}
+
+.adsImg {
+  width: 500px;
+  height: fit-content;
+}
+
+@media (max-width: 1024px) {
+  .ad {
+    display: none;
+  }
+}
+
+@media (max-width: 1024px) {
+  .ad {
+    display: none;
+  }
+}

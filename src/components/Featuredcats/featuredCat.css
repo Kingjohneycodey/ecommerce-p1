@@ -1,0 +1,38 @@
+.feature {
+  display: flex;
+  gap: 3px;
+  overflow: scroll;
+  position: relative;
+  cursor: pointer;
+}
+
+.featuredImg {
+  width: 300px;
+  height: 300px;
+}
+
+.featuredImg:hover {
+  transform: scale(1.1);
+  transition-duration: 0.3s;
+}
+.feature::-webkit-scrollbar {
+  display: none;
+}
+
+.featuredTitle {
+  margin-bottom: 20px;
+  font-size: 23px;
+}
+
+.featuredName {
+  position: absolute;
+  top: 240px;
+  padding-left: 20px;
+  width: 300px;
+}
+
+.featuredName p {
+  color: white;
+  font-size: 20px;
+  font-weight: 600;
+}
