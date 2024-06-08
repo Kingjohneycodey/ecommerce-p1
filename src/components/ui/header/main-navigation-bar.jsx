@@ -34,7 +34,7 @@ export function MainNavigationBar() {
             size="icon"
             variant="ghost"
             onClick={toggleMobileNav}
-            className="block lg:hidden"
+            className="flex items-center justify-center lg:hidden"
           >
             <MenuIcon />
           </Button>
