@@ -25,16 +25,14 @@
     --color-accent-foreground: 0 0% 98%;
 
     --color-brand-primary: 11.15deg 96.58% 45.88%;
-    --color-brand-secondary: 28.34deg 92.89%
-      50.39%;
+    --color-brand-secondary: 28.34deg 92.89% 50.39%;
     --color-destructive: 0deg 62.8% 30.6%;
     --color-destructive-foreground: 0deg 0% 98%;
 
     --color-neutral: 240deg 11% 15%;
     --color-neutral-100: 240deg 14.81% 10.59%;
     --color-neutral-foreground-100: 240deg 4% 58%;
-    --color-neutral-foreground-200: 240deg 12.28%
-      88.82%;
+    --color-neutral-foreground-200: 240deg 12.28% 88.82%;
     --color-neutral-foreground-300: 0deg 0% 100%;
 
     --radix-accordion-content-height: 'max-content';
@@ -61,9 +59,8 @@
     --color-muted-foreground: 240deg 5% 64.9%;
 
     --color-brand-primary: 11.15deg 96.58% 45.88%;
-    --color-brand-secondary: 28.34deg 92.89%
-      50.39%;
-    --color-primary-foreground: 0deg 0% 100%;
+    --color-brand-secondary: 28.34deg 92.89% 50.39%;
+    --color-brand-primary-foreground: 0 0 100%;
 
     --color-destructive: 0deg 62.8% 30.6%;
     --color-destructive-foreground: 0deg 0% 98%;
@@ -71,12 +68,15 @@
     --color-neutral: 240deg 11% 15%;
     --color-neutral-100: 240deg 14.81% 10.59%;
     --color-neutral-foreground-100: 240deg 4% 58%;
-    --color-neutral-foreground-200: 240deg 12.28%
-      88.82%;
+    --color-neutral-foreground-200: 240deg 12.28% 88.82%;
     --color-neutral-foreground-300: 0deg 0% 100%;
   }
 }
 
 .header-action {
   @apply text-xs font-medium tracking-wide opacity-60 transition hover:opacity-80;
+}
+
+.animated-underline {
+  @apply relative before:absolute before:-bottom-1 before:right-0 before:h-px before:w-0 before:bg-neutral-foreground-300 before:transition-[width] before:duration-500 before:ease-out before:content-[''] hover:before:left-0 hover:before:right-0 hover:before:w-full;
 }
