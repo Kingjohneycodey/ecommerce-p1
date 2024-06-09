@@ -5,7 +5,12 @@ import { cn } from '@/lib/utils'
 
 const Separator = forwardRef(
   (
-    { className, orientation = 'horizontal', decorative = true, ...props },
+    {
+      className,
+      orientation = 'horizontal',
+      decorative = true,
+      ...props
+    },
     ref
   ) => (
     <SeparatorPrimitive.Root
@@ -13,8 +18,10 @@ const Separator = forwardRef(
       decorative={decorative}
       orientation={orientation}
       className={cn(
-        'bg-border/60 shrink-0',
-        orientation === 'horizontal' ? 'h-px w-full' : 'h-full w-px',
+        'shrink-0 bg-border/60',
+        orientation === 'horizontal'
+          ? 'h-px w-full'
+          : 'h-full w-px',
         className
       )}
       {...props}

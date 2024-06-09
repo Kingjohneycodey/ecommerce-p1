@@ -78,7 +78,7 @@ export function CategoryLinks({ id }) {
     <div
       key={id}
       className={cn(
-        'animate-fade-in absolute -left-4 right-0 top-full flex h-[470px] items-center gap-4 bg-background text-foreground',
+        'absolute -left-4 right-0 top-full flex h-[470px] animate-fade-in items-center gap-4 bg-background text-foreground',
         id === null && 'opacity-0'
       )}
     >

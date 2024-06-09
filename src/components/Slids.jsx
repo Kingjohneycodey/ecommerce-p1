@@ -4,11 +4,11 @@ import { A11y, Autoplay } from 'swiper/modules'
 import 'swiper/css'
 import 'swiper/css/autoplay'
 
-import back from '@/assets/back.png'
-import earn from '@/assets/earn.png'
-import exclusive from '@/assets/exclusive.png'
-import love from '@/assets/love.png'
-import win from '@/assets/win.png'
+import back from '../assets/back.png'
+import earn from '../assets/earn.png'
+import exclusive from '../assets/exclusive.png'
+import love from '../assets/love.png'
+import win from '../assets/win.png'
 
 const data = [
   {
@@ -45,8 +45,13 @@ export default function Slids() {
           disableOnInteraction: false,
           stopOnLastSlide: false,
         }}
+<<<<<<< HEAD
         onSwiper={(swiper) => console.log(swiper)}
         onSlideChange={() => console.log('slide change')}
+=======
+        // onSwiper={(swiper) => console.log(swiper)}
+        // onSlideChange={() => console.log('slide change')}
+>>>>>>> 8b2305ff036562fbfac6550f2f94e871b08f702b
       >
         {data.map((user) => (
           <SwiperSlide key={user.id}>

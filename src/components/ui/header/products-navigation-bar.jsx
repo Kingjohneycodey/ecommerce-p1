@@ -4,7 +4,7 @@ import {
   CategoryLinks,
 } from './cateogories-dropdown'
 import { ShoppingCartIcon } from 'lucide-react'
-import Nav from '../nav'
+import { DesktopNav } from '../nav'
 
 export function ProductsNavigationBar() {
   const [currentCategory, setCurrentCategory] =
@@ -17,7 +17,7 @@ export function ProductsNavigationBar() {
   return (
     // desktop only
     <div className="hidden lg:block">
-      <div className="relative flex min-h-10 items-stretch justify-between gap-4 bg-brand-primary px-4 text-sm font-bold text-neutral-foreground-300 md:px-8 lg:px-10">
+      <div className="relative flex min-h-10 items-stretch justify-between gap-4 bg-brand-primary px-4 text-sm font-bold text-neutral-foreground-300 md:px-8 lg:px-16">
         <CategoriesDropdown
           setCurrentCategory={setCurrentCategory}
           isOpen={categoriesDropdownOpen}
@@ -25,7 +25,7 @@ export function ProductsNavigationBar() {
         />
 
         <div className="relative flex flex-1 items-center justify-between">
-          <Nav />
+          <DesktopNav />
           {categoriesDropdownOpen &&
             currentCategory != null && (
               <CategoryLinks id={currentCategory} />
