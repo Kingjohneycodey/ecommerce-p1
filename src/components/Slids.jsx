@@ -1,14 +1,14 @@
-import { Swiper, SwiperSlide } from "swiper/react";
-import { A11y, Autoplay } from "swiper/modules";
+import { Swiper, SwiperSlide } from 'swiper/react'
+import { A11y, Autoplay } from 'swiper/modules'
 
-import "swiper/css";
-import "swiper/css/autoplay";
+import 'swiper/css'
+import 'swiper/css/autoplay'
 
-import back from "../assets/back.png";
-import earn from "../assets/earn.png";
-import exclusive from "../assets/exclusive.png";
-import love from "../assets/love.png";
-import win from "../assets/win.png";
+import back from '../assets/back.png'
+import earn from '../assets/earn.png'
+import exclusive from '../assets/exclusive.png'
+import love from '../assets/love.png'
+import win from '../assets/win.png'
 
 const data = [
   {
@@ -31,7 +31,7 @@ const data = [
     id: 5,
     image: win,
   },
-];
+]
 
 export default function Slids() {
   return (
@@ -46,17 +46,17 @@ export default function Slids() {
           disableOnInteraction: false,
           stopOnLastSlide: false,
         }}
-        onSwiper={(swiper) => console.log(swiper)}
-        onSlideChange={() => console.log("slide change")}
+        // onSwiper={(swiper) => console.log(swiper)}
+        // onSlideChange={() => console.log('slide change')}
       >
         {data.map((user) => (
           <SwiperSlide key={user.id}>
-            <div className="w-[100%] ">
+            <div className="w-[100%]">
               <img src={user.image} className="w-full" />
             </div>
           </SwiperSlide>
         ))}
       </Swiper>
     </div>
-  );
+  )
 }

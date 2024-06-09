@@ -1,5 +1,11 @@
+import Slids from '@/components/Slids'
+
 const Home = () => {
-  return <div>Home</div>
+  return (
+    <>
+      <Slids />
+    </>
+  )
 }
 
 export default Home
