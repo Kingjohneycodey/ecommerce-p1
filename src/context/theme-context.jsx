@@ -5,7 +5,8 @@ const initialState = {
   setTheme: () => null,
 }
 
-export const ThemeProviderContext = createContext(initialState)
+export const ThemeProviderContext =
+  createContext(initialState)
 
 export function ThemeProvider({
   children,
@@ -23,8 +24,9 @@ export function ThemeProvider({
     root.classList.remove('light', 'dark')
 
     if (theme === 'system') {
-      const systemTheme = window.matchMedia('(prefers-color-scheme: dark)')
-        .matches
+      const systemTheme = window.matchMedia(
+        '(prefers-color-scheme: dark)'
+      ).matches
         ? 'dark'
         : 'light'
 

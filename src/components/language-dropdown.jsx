@@ -15,9 +15,7 @@ export function LanguageDropDown() {
 
   return (
     <DropdownMenu
-      onOpenChange={(openState) =>
-        setIsOpen(openState)
-      }
+      onOpenChange={(openState) => setIsOpen(openState)}
     >
       <DropdownMenuTrigger className="header-action flex items-center justify-center gap-1 p-2">
         <span>English</span>
@@ -30,9 +28,7 @@ export function LanguageDropDown() {
       </DropdownMenuTrigger>
 
       <DropdownMenuContent align="start">
-        <DropdownMenuLabel>
-          Language
-        </DropdownMenuLabel>
+        <DropdownMenuLabel>Language</DropdownMenuLabel>
 
         <DropdownMenuSeparator />
 

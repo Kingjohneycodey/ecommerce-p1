@@ -57,12 +57,8 @@ export const Tooltip = ({
         tooltipContentRef.current.style.left = `${newLeft}px`
       }
       // overflowing from right side
-      else if (
-        right + padding >
-        window.innerWidth
-      ) {
-        const newRight =
-          right + padding - window.innerWidth
+      else if (right + padding > window.innerWidth) {
+        const newRight = right + padding - window.innerWidth
         tooltipContentRef.current.style.right = `${newRight}px`
       }
 
@@ -73,10 +69,8 @@ export const Tooltip = ({
         tooltipRef.current.style.bottom = '0'
         tooltipRef.current.style.transform =
           'translateY(calc(100% + 10px))'
-        triangleInvertedRef.current.style.display =
-          'none'
-        triangleRef.current.style.display =
-          'block'
+        triangleInvertedRef.current.style.display = 'none'
+        triangleRef.current.style.display = 'block'
       }
     }
   }
@@ -90,16 +84,10 @@ export const Tooltip = ({
     }
 
     handleResize()
-    window.addEventListener(
-      'resize',
-      handleResize
-    )
+    window.addEventListener('resize', handleResize)
 
     return () => {
-      window.removeEventListener(
-        'resize',
-        handleResize
-      )
+      window.removeEventListener('resize', handleResize)
     }
   }, [hover])
 
@@ -141,83 +129,76 @@ export const Tooltip = ({
             },
             content
           ),
-          React.createElement(
-            TriangleInvertedFilled,
-            {
-              ref: triangleInvertedRef,
-              style: { marginTop: '-7px' },
-            }
-          )
+          React.createElement(TriangleInvertedFilled, {
+            ref: triangleInvertedRef,
+            style: { marginTop: '-7px' },
+          })
         )
       ),
     children
   )
 }
 
-const TriangleInvertedFilled = forwardRef(
-  (props, ref) => {
-    return React.createElement(
-      'svg',
+const TriangleInvertedFilled = forwardRef((props, ref) => {
+  return React.createElement(
+    'svg',
+    {
+      ref,
+      xmlns: 'http://www.w3.org/2000/svg',
+      width: '1em',
+      height: '1em',
+      viewBox: '0 0 24 24',
+      ...props,
+    },
+    React.createElement(
+      'g',
       {
-        ref,
-        xmlns: 'http://www.w3.org/2000/svg',
-        width: '1em',
-        height: '1em',
-        viewBox: '0 0 24 24',
-        ...props,
+        fill: 'none',
+        strokeLinecap: 'round',
+        strokeLinejoin: 'round',
+        strokeWidth: '2',
       },
-      React.createElement(
-        'g',
-        {
-          fill: 'none',
-          strokeLinecap: 'round',
-          strokeLinejoin: 'round',
-          strokeWidth: '2',
-        },
-        React.createElement('path', {
-          d: 'M0 0h24v24H0z',
-        }),
-        React.createElement('path', {
-          fill: 'currentColor',
-          d: 'M20.118 3H3.893A2.914 2.914 0 0 0 1.39 7.371L9.506 20.92a2.917 2.917 0 0 0 4.987.005l8.11-13.539A2.914 2.914 0 0 0 20.117 3z',
-        })
-      )
+      React.createElement('path', {
+        d: 'M0 0h24v24H0z',
+      }),
+      React.createElement('path', {
+        fill: 'currentColor',
+        d: 'M20.118 3H3.893A2.914 2.914 0 0 0 1.39 7.371L9.506 20.92a2.917 2.917 0 0 0 4.987.005l8.11-13.539A2.914 2.914 0 0 0 20.117 3z',
+      })
     )
-  }
-)
+  )
+})
 TriangleInvertedFilled.displayName =
   'TriangleInvertedFilled'
 
-const TriangleFilled = forwardRef(
-  (props, ref) => {
-    return React.createElement(
-      'svg',
+const TriangleFilled = forwardRef((props, ref) => {
+  return React.createElement(
+    'svg',
+    {
+      ref,
+      xmlns: 'http://www.w3.org/2000/svg',
+      width: '1em',
+      height: '1em',
+      viewBox: '0 0 24 24',
+      ...props,
+    },
+    React.createElement(
+      'g',
       {
-        ref,
-        xmlns: 'http://www.w3.org/2000/svg',
-        width: '1em',
-        height: '1em',
-        viewBox: '0 0 24 24',
-        ...props,
+        fill: 'none',
+        strokeLinecap: 'round',
+        strokeLinejoin: 'round',
+        strokeWidth: '2',
       },
-      React.createElement(
-        'g',
-        {
-          fill: 'none',
-          strokeLinecap: 'round',
-          strokeLinejoin: 'round',
-          strokeWidth: '2',
-        },
-        React.createElement('path', {
-          d: 'M0 0h24v24H0z',
-        }),
-        React.createElement('path', {
-          fill: 'hsl(var(--color-neutral))',
-          d: 'M12 1.67a2.914 2.914 0 0 0-2.492 1.403L1.398 16.61a2.914 2.914 0 0 0 2.484 4.385h16.225a2.914 2.914 0 0 0 2.503-4.371L14.494 3.078A2.917 2.917 0 0 0 12 1.67',
-        })
-      )
+      React.createElement('path', {
+        d: 'M0 0h24v24H0z',
+      }),
+      React.createElement('path', {
+        fill: 'hsl(var(--color-neutral))',
+        d: 'M12 1.67a2.914 2.914 0 0 0-2.492 1.403L1.398 16.61a2.914 2.914 0 0 0 2.484 4.385h16.225a2.914 2.914 0 0 0 2.503-4.371L14.494 3.078A2.917 2.917 0 0 0 12 1.67',
+      })
     )
-  }
-)
+  )
+})
 
 TriangleFilled.displayName = 'TriangleFilled'

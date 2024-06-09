@@ -1,8 +1,4 @@
-import {
-  Moon,
-  Sun,
-  LaptopIcon,
-} from 'lucide-react'
+import { Moon, Sun, LaptopIcon } from 'lucide-react'
 
 import { buttonVariants } from '@/components/ui/button'
 import {
@@ -34,20 +30,14 @@ export function ModeToggle() {
         {theme === 'dark' && <Moon />}
 
         {theme === 'system' && <LaptopIcon />}
-        <span className="sr-only">
-          Toggle theme
-        </span>
+        <span className="sr-only">Toggle theme</span>
         {/* </Button> */}
       </DropdownMenuTrigger>
       <DropdownMenuContent align="end">
-        <DropdownMenuItem
-          onClick={() => setTheme('light')}
-        >
+        <DropdownMenuItem onClick={() => setTheme('light')}>
           Light
         </DropdownMenuItem>
-        <DropdownMenuItem
-          onClick={() => setTheme('dark')}
-        >
+        <DropdownMenuItem onClick={() => setTheme('dark')}>
           Dark
         </DropdownMenuItem>
         <DropdownMenuItem
