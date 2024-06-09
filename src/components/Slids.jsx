@@ -45,13 +45,8 @@ export default function Slids() {
           disableOnInteraction: false,
           stopOnLastSlide: false,
         }}
-<<<<<<< HEAD
-        onSwiper={(swiper) => console.log(swiper)}
-        onSlideChange={() => console.log('slide change')}
-=======
         // onSwiper={(swiper) => console.log(swiper)}
         // onSlideChange={() => console.log('slide change')}
->>>>>>> 8b2305ff036562fbfac6550f2f94e871b08f702b
       >
         {data.map((user) => (
           <SwiperSlide key={user.id}>
