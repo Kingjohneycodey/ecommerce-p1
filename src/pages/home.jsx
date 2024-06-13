@@ -1,12 +1,15 @@
 import DiscountBanner from "../components/DiscountBanner"
 import Auction from "../components/Auction"
+import Slids from '@/components/Slids'
 
 const Home = () => {
-  return <div>Home
-     <Auction/>
+  return (
+    <div>
+      <Slids />
+         <Auction/>
      <DiscountBanner/>
-      </div>
-
+    </div>
+  )
 }
 
 export default Home
