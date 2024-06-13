@@ -48,8 +48,8 @@ export default function Slids() {
         // onSwiper={(swiper) => console.log(swiper)}
         // onSlideChange={() => console.log('slide change')}
       >
-        {data.map((user) => (
-          <SwiperSlide key={user.id}>
+        {data.map((user, i) => (
+          <SwiperSlide key={i}>
             <div className="w-[100%]">
               <img src={user.image} className="w-full" />
             </div>
