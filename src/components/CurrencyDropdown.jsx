@@ -5,7 +5,7 @@ import {
   DropdownMenuLabel,
   DropdownMenuSeparator,
   DropdownMenuTrigger,
-} from './ui/dropdown-menu'
+} from './ui/DropdownMenu'
 import { cn } from '@/lib/utils'
 import { ChevronDown } from 'lucide-react'
 import { useState } from 'react'
@@ -15,9 +15,7 @@ export function CurrencyDropDown() {
 
   return (
     <DropdownMenu
-      onOpenChange={(openState) =>
-        setIsOpen(openState)
-      }
+      onOpenChange={(openState) => setIsOpen(openState)}
     >
       <DropdownMenuTrigger className="header-action flex items-center justify-center gap-1 p-2">
         <span>Nigerian Naira</span>
@@ -30,9 +28,7 @@ export function CurrencyDropDown() {
       </DropdownMenuTrigger>
 
       <DropdownMenuContent align="end">
-        <DropdownMenuLabel>
-          Currency
-        </DropdownMenuLabel>
+        <DropdownMenuLabel>Currency</DropdownMenuLabel>
 
         <DropdownMenuSeparator />
 

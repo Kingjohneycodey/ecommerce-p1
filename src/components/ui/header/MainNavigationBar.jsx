@@ -1,7 +1,7 @@
-import { Logo } from '@/components/logo'
-import { ModeToggle } from '@/components/mode-toggle'
-import { SearchBar } from '@/components/search-bar'
-import UserAuth from '@/components/user-auth'
+import { Logo } from '@/components/Logo'
+import { ModeToggle } from '@/components/ModeToggle'
+import { SearchBar } from '@/components/SearchBar'
+import UserAuth from '@/components/UserAuth'
 import {
   ArrowLeftRight,
   HeartIcon,
@@ -11,12 +11,12 @@ import {
   MenuIcon,
 } from 'lucide-react'
 import { Link } from 'react-router-dom'
-import { Tooltip } from '../tooltip'
+import { Tooltip } from '../Tooltip'
 import { useState } from 'react'
 import { cn } from '@/lib/utils'
-import { Button } from '../button'
-import { MobileNav } from '../nav'
-import { useNavContext } from '@/context/nav-context'
+import { Button } from '../Button'
+import { MobileNav } from '../Nav'
+import { useNavContext } from '@/context/NavContext'
 
 export function MainNavigationBar() {
   const [searchOpen, setSearchOpen] = useState(false)

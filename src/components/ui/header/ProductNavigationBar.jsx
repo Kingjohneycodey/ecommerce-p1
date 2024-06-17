@@ -2,9 +2,9 @@ import { useState } from 'react'
 import {
   CategoriesDropdown,
   CategoryLinks,
-} from './cateogories-dropdown'
+} from './CategoriesDropdown'
 import { ShoppingCartIcon } from 'lucide-react'
-import { DesktopNav } from '../nav'
+import { DesktopNav } from '../Nav'
 
 export function ProductsNavigationBar() {
   const [currentCategory, setCurrentCategory] =

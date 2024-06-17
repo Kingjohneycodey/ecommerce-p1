@@ -1,6 +1,6 @@
-import { CurrencyDropDown } from '@/components/currency-dropdown'
-import { LanguageDropDown } from '@/components/language-dropdown'
-import { Separator } from '../separator'
+import { CurrencyDropDown } from '@/components/CurrencyDropdown'
+import { LanguageDropDown } from '@/components/LanguageDropdown'
+import { Separator } from '../Separator'
 import { Link } from 'react-router-dom'
 
 export function TopBar() {

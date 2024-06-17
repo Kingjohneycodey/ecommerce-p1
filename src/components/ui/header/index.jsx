@@ -1,7 +1,7 @@
-import { TopBar } from './top-bar'
-import { AdBanner } from './ad-banner'
-import { MainNavigationBar } from './main-navigation-bar'
-import { ProductsNavigationBar } from './products-navigation-bar'
+import { TopBar } from './TopBar'
+import { AdBanner } from './AdBanner'
+import { MainNavigationBar } from './MainNavigationBar'
+import { ProductsNavigationBar } from './ProductNavigationBar'
 
 export function HeaderContainer() {
   return (

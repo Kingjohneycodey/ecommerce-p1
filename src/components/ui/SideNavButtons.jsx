@@ -1,5 +1,5 @@
 import { cn } from '@/lib/utils'
-import { Button } from './button'
+import { Button } from './Button'
 import { sideLinks } from '@/lib/data'
 import {
   ChevronRightIcon,
@@ -7,7 +7,7 @@ import {
 } from 'lucide-react'
 import { Link } from 'react-router-dom'
 import { useState } from 'react'
-import { useNavContext } from '@/context/nav-context'
+import { useNavContext } from '@/context/NavContext'
 
 export default function SideNavButtons() {
   const { navOpen } = useNavContext()
