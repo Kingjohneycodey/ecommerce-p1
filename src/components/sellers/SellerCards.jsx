@@ -14,7 +14,7 @@ export function SellerCards({ className }) {
         <SellerCard
           key={seller.id}
           {...seller}
-          className="border bg-background first:z-10 max-sm:flex-1 first:md:-mt-px"
+          className="border bg-background first:z-10 hover:!ml-0 hover:!mr-0 max-sm:flex-1 first:md:-mt-px"
         />
       ))}
     </div>

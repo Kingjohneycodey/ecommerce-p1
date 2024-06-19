@@ -14,7 +14,7 @@ export function SellerCard({
   return (
     <div
       className={cn(
-        'group/sellerCard min-w-fit px-4 py-6 text-center shadow-none transition-shadow duration-150 ease-in hover:shadow-2xl',
+        'group/sellerCard min-w-fit px-4 py-6 text-center shadow-none transition-shadow duration-150 ease-in hover:z-20 hover:shadow-2xl',
         className
       )}
     >
