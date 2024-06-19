@@ -31,7 +31,10 @@ export function SellerCard({
           />
         </div>
         {verified && (
-          <span className="absolute right-2 top-1 inline-block rounded-full bg-blue-500 p-px">
+          <span
+            className="absolute right-2 top-1 inline-block rounded-full bg-blue-500 p-px"
+            title="verified"
+          >
             <CheckCircle2Icon className="size-5 text-white" />
           </span>
         )}
