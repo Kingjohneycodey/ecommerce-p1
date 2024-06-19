@@ -20,13 +20,11 @@ const routes = createBrowserRouter([
       { path: '/others', element: <div>Other page</div> },
     ],
   },
-
   {
     path: 'deal',
     element: <RootLayout />,
     children: [{ index: true, element: <TopDeals /> }],
   },
-
   {
     path: '*',
     element: <PageNotFound />,

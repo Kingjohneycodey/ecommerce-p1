@@ -1,6 +1,7 @@
 import { SearchIcon } from 'lucide-react'
 import { Input } from './ui/Input'
 
+// search bar
 export function SearchBar() {
   return (
     <form className="relative flex-1 lg:mx-auto lg:max-w-md">
