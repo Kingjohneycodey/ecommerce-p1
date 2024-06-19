@@ -1,4 +1,4 @@
-import { Button } from '../Button'
+import { Button } from '../_button'
 import { XIcon } from 'lucide-react'
 
 export function AdBanner() {

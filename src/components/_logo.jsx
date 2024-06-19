@@ -1,4 +1,4 @@
-import { Separator } from './ui/Separator'
+import { Separator } from './ui/_separator'
 
 export function Logo() {
   return (

@@ -1,6 +1,6 @@
 import { Outlet } from 'react-router-dom'
 import { HeaderContainer } from '../ui/header'
-import { Footer } from '../ui/Footer'
+import { Footer } from '../ui/_footer'
 import SideNavButtons from '../ui/SideNavButtons'
 import { NavContextProvider } from '@/context/NavContext'
 
