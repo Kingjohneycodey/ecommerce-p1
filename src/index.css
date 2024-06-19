@@ -80,3 +80,13 @@
 .animated-underline {
   @apply relative before:absolute before:-bottom-1 before:right-0 before:h-px before:w-0 before:bg-neutral-foreground-300 before:transition-[width] before:duration-500 before:ease-out before:content-[''] hover:before:left-0 hover:before:right-0 hover:before:w-full;
 }
+
+.swiper-button-next,
+.swiper-button-prev {
+  color: white !important;
+}
+
+.swiper-button-next:after,
+.swiper-button-prev:after {
+  font-size: 20px !important;
+}

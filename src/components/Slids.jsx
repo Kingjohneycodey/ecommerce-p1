@@ -38,7 +38,6 @@ export default function Slids() {
       <Swiper
         modules={[A11y, Autoplay]}
         slidesPerView={1}
-        navigation
         pagination={{ clickable: true }}
         autoplay={{
           delay: 5100,
