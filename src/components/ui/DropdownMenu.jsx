@@ -1,5 +1,3 @@
-'use client'
-
 import * as React from 'react'
 import * as DropdownMenuPrimitive from '@radix-ui/react-dropdown-menu'
 import { Check, ChevronRight, Circle } from 'lucide-react'
@@ -16,7 +14,8 @@ const DropdownMenuPortal = DropdownMenuPrimitive.Portal
 
 const DropdownMenuSub = DropdownMenuPrimitive.Sub
 
-const DropdownMenuRadioGroup = DropdownMenuPrimitive.RadioGroup
+const DropdownMenuRadioGroup =
+  DropdownMenuPrimitive.RadioGroup
 
 const DropdownMenuSubTrigger = React.forwardRef(
   ({ className, inset, children, ...props }, ref) => (
@@ -67,7 +66,8 @@ const DropdownMenuContent = React.forwardRef(
     </DropdownMenuPrimitive.Portal>
   )
 )
-DropdownMenuContent.displayName = DropdownMenuPrimitive.Content.displayName
+DropdownMenuContent.displayName =
+  DropdownMenuPrimitive.Content.displayName
 
 const DropdownMenuItem = React.forwardRef(
   ({ className, inset, ...props }, ref) => (
@@ -82,7 +82,8 @@ const DropdownMenuItem = React.forwardRef(
     />
   )
 )
-DropdownMenuItem.displayName = DropdownMenuPrimitive.Item.displayName
+DropdownMenuItem.displayName =
+  DropdownMenuPrimitive.Item.displayName
 
 const DropdownMenuCheckboxItem = React.forwardRef(
   ({ className, children, checked, ...props }, ref) => (
@@ -126,7 +127,8 @@ const DropdownMenuRadioItem = React.forwardRef(
     </DropdownMenuPrimitive.RadioItem>
   )
 )
-DropdownMenuRadioItem.displayName = DropdownMenuPrimitive.RadioItem.displayName
+DropdownMenuRadioItem.displayName =
+  DropdownMenuPrimitive.RadioItem.displayName
 
 const DropdownMenuLabel = React.forwardRef(
   ({ className, inset, ...props }, ref) => (
@@ -141,7 +143,8 @@ const DropdownMenuLabel = React.forwardRef(
     />
   )
 )
-DropdownMenuLabel.displayName = DropdownMenuPrimitive.Label.displayName
+DropdownMenuLabel.displayName =
+  DropdownMenuPrimitive.Label.displayName
 
 const DropdownMenuSeparator = React.forwardRef(
   ({ className, ...props }, ref) => (
@@ -152,12 +155,16 @@ const DropdownMenuSeparator = React.forwardRef(
     />
   )
 )
-DropdownMenuSeparator.displayName = DropdownMenuPrimitive.Separator.displayName
+DropdownMenuSeparator.displayName =
+  DropdownMenuPrimitive.Separator.displayName
 
 const DropdownMenuShortcut = ({ className, ...props }) => {
   return (
     <span
-      className={cn('ml-auto text-xs tracking-widest opacity-60', className)}
+      className={cn(
+        'ml-auto text-xs tracking-widest opacity-60',
+        className
+      )}
       {...props}
     />
   )
