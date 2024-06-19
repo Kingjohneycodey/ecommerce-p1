@@ -1,0 +1,52 @@
+{
+  "sellers": [
+    {
+      "id": 1,
+      "image": "src/assets/images/placeholder/tech_trove.webp",
+      "name": "Tech Trove",
+      "rating": 0,
+      "verified": true,
+      "reviews": 0
+    },
+    {
+      "id": 2,
+      "image": "src/assets/images/placeholder/cyber_pulse.webp",
+      "name": "Cyber Pulse",
+      "rating": 5,
+      "verified": true,
+      "reviews": 3
+    },
+    {
+      "id": 3,
+      "image": "src/assets/images/placeholder/home_picks.webp",
+      "name": "Home Picks",
+      "rating": 0,
+      "verified": true,
+      "reviews": 0
+    },
+    {
+      "id": 4,
+      "image": "src/assets/images/placeholder/penny_pops.webp",
+      "name": "Penny Pops",
+      "rating": 0,
+      "verified": true,
+      "reviews": 0
+    },
+    {
+      "id": 5,
+      "image": "src/assets/images/placeholder/print_pulse.jpg",
+      "name": "Print Pulse",
+      "rating": 3,
+      "verified": false,
+      "reviews": 0
+    },
+    {
+      "id": 6,
+      "image": "src/assets/images/placeholder/krunchy_bitz.jpeg",
+      "name": "Krunchy Bitz",
+      "rating": 3,
+      "verified": true,
+      "reviews": 10
+    }
+  ]
+}

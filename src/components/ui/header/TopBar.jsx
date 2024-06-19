@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom'
 
 export function TopBar() {
   return (
-    <div className="flex h-12 items-center justify-between px-8 lg:px-16">
+    <div className="relative z-10 flex h-12 items-center justify-between bg-background px-8 lg:px-16">
       <LanguageDropDown />
       <CurrencyDropDown />
 

@@ -1,7 +1,11 @@
 import {
   ClockIcon,
   GavelIcon,
+  HeadsetIcon,
+  InfoIcon,
   MenuIcon,
+  ScrollTextIcon,
+  Undo2Icon,
   ZapIcon,
 } from 'lucide-react'
 
@@ -75,6 +79,13 @@ export const categories = [
     slug: 'fashion',
     icon: '/icons/fashion.gif',
     content: 'Fashion and Wears...',
+  },
+  {
+    id: 11,
+    name: 'Software, Scripts & Plugins',
+    slug: 'software',
+    icon: '/icons/software.gif',
+    content: 'software, scripts and pluginss...',
   },
 ]
 
@@ -196,3 +207,26 @@ export const footerLinks = {
     },
   ],
 }
+
+export const sellersPageLinks = [
+  {
+    icon: ScrollTextIcon,
+    name: 'Terms and conditions',
+    path: '/terms',
+  },
+  {
+    icon: Undo2Icon,
+    name: 'Return policy',
+    path: '/return-policy',
+  },
+  {
+    icon: HeadsetIcon,
+    name: 'Support policy',
+    path: '/support-policy',
+  },
+  {
+    icon: InfoIcon,
+    name: 'Privacy policy',
+    path: '/privacy-policy',
+  },
+]
