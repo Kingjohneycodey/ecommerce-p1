@@ -34,13 +34,13 @@ const data = [
 
 export default function Slids() {
   return (
-    <div>
+    <div className="">
       <Swiper
         modules={[A11y, Autoplay]}
         slidesPerView={1}
         pagination={{ clickable: true }}
         autoplay={{
-          delay: 5100,
+          delay: 6000,
           disableOnInteraction: false,
           stopOnLastSlide: false,
         }}
@@ -49,8 +49,8 @@ export default function Slids() {
       >
         {data.map((user, i) => (
           <SwiperSlide key={i}>
-            <div className="w-[100%]">
-              <img src={user.image} className="w-full" />
+            <div className="w-[120%]">
+              <img src={user.image} className="" />
             </div>
           </SwiperSlide>
         ))}

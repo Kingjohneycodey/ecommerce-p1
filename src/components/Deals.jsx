@@ -121,7 +121,7 @@ export const Deals = () => {
             navigation
             pagination={{ clickable: true }}
             autoplay={{
-              delay: 5100,
+              delay: 6000,
               disableOnInteraction: false,
               stopOnLastSlide: false,
             }}

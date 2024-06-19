@@ -1,0 +1,134 @@
+:root {
+    font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+    line-height: 1.5;
+    font-weight: 400;
+  
+    color-scheme: light dark;
+    background-color: #fff;
+  
+    font-synthesis: none;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  a{
+    text-decoration: none;
+  }
+  .auction{
+    padding: 0 4.5rem;
+  }
+  .auction h1{
+  font-size: 22px;
+  }
+  .main img{
+    width: 400px;
+  }
+  
+  .auction-card{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+  }
+  .products{
+    display: flex;
+    flex-direction: column;
+    margin-left: 40px;
+  }
+  .products img{
+    width: 120px;
+    margin-bottom:50px;
+  }
+  
+  .rice-card .content{
+    border: 1px solid grey;
+    display: flex;
+  padding-top: 10px;
+  }
+  .blender-card .content{
+    border: 1px solid grey;
+    display: flex;
+  }
+  .description .name{
+    font-size: 14px;
+    font-weight: 400;
+  }
+  .description h2{
+    font-size: 13px;
+  }
+  .description .bid{
+    color: gray;
+    font-weight: 400;
+    margin-bottom: -3px;
+  }
+  .description span{
+    color: #e62e04;
+  }
+  .description .bid{
+    display: flex;
+    flex-direction: column;
+  }
+  .description button{
+    background-color: #e62e04;
+    color: #fff;
+    border: none;
+    outline: none;
+    letter-spacing: 1px;
+    padding: 8px 10px;
+    font-weight: 400;
+    margin-top: 10px;
+  }
+  .rice-card{
+    transition: 0.2s;
+  }
+  
+  .rice-card:hover img{
+    transform: scale(1.05);
+    
+    
+  }
+  .blender-card:hover img{
+    transform: scale(1.1);
+  }
+  .container{
+    margin-top: 20px;
+    background-color: #292933;
+    height: 310px;
+    width: 100%;
+  }
+  .coupon{
+    position: relative;
+    padding: 15px 165px;
+  }
+  .coupon-content h4{
+    font-size: 36px;
+    font-weight: 400;
+    color: #fff;
+    margin-bottom: 1rem;
+  }
+  .coupon-content h5{
+    font-size: 20px;
+    font-weight: 400;
+    color: grey;
+    margin: 30px 0 ;
+  }
+  .coupon-button a{
+    color: #fff;
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 28px;
+    border: 2px solid #fff;
+    font-size: 17px;
+    padding: 10px 40px;
+    box-shadow: 0px 20px 30px rgba(0,0,0,0.16);
+    transition: 0.2s;
+    margin-top: 40px;
+  }
+  .coupon-button a:hover{
+     background-color: #fff;
+     color: #333;
+     border:none ;
+  }
+  .coupon-image img{
+    position: absolute;
+    right: 0;
+    bottom: -45px;
+    height: 100;
+  }
