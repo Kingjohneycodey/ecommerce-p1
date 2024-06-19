@@ -17,7 +17,7 @@ export function ProductsNavigationBar() {
   return (
     // desktop only
     <div className="hidden lg:block">
-      <div className="relative flex min-h-10 items-stretch justify-between gap-4 bg-brand-primary px-4 text-sm font-bold text-neutral-foreground-300 md:px-8 lg:px-16">
+      <div className="page-bounds relative flex min-h-10 items-stretch justify-between gap-4 bg-brand-primary px-4 text-sm font-bold text-neutral-foreground-300">
         <CategoriesDropdown
           setCurrentCategory={setCurrentCategory}
           isOpen={categoriesDropdownOpen}

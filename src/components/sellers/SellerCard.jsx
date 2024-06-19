@@ -26,14 +26,14 @@ export function SellerCard({
         />
       </div>
 
-      <h2 className="mb-6 line-clamp-2 w-full truncate text-balance px-2 font-bold">
+      <h2 className="mb-8 line-clamp-2 w-full truncate text-balance px-2 font-bold">
         {name}
       </h2>
 
       <Rating
         rating={rating}
         reviews={reviews}
-        className="mx-auto mb-4 max-sm:justify-center"
+        className="mx-auto mb-6 max-sm:justify-center"
         readOnly
       />
 

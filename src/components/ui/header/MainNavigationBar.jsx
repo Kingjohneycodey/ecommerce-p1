@@ -28,7 +28,7 @@ export function MainNavigationBar() {
 
   return (
     <>
-      <div className="relative z-40 flex max-h-14 min-h-12 items-center justify-between gap-4 bg-background px-8 py-4 max-lg:overflow-hidden lg:px-16">
+      <div className="page-bounds relative z-40 flex max-h-14 min-h-12 items-center justify-between gap-4 bg-background py-4 max-lg:overflow-hidden">
         <div className="flex gap-2">
           <Button
             size="icon"

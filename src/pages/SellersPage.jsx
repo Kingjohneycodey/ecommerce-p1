@@ -9,7 +9,7 @@ const SellersPage = () => {
       <ParticlesComponent />
       <div className="relative z-10">
         <div>
-          <section className="px-8 lg:px-16">
+          <section className="page-bounds">
             <h1 className="my-6 font-sans text-2xl font-semibold">
               All Sellers
             </h1>
@@ -18,7 +18,7 @@ const SellersPage = () => {
           </section>
 
           <section className="border-t border-border/10 bg-muted">
-            <div className="mx-auto px-8 pb-6 pt-4 text-justify lg:px-16">
+            <div className="page-bounds mx-auto pb-6 pt-4 text-justify">
               <h3 className="mb-4 text-lg font-bold text-secondary">
                 Your Ultimate Shopping Destination
               </h3>
@@ -36,7 +36,7 @@ const SellersPage = () => {
             </div>
 
             <div className="border-t border-border/30">
-              <ul className="mx-auto grid grid-cols-1 -space-x-px -space-y-px px-8 sm:grid-cols-2 lg:grid-cols-4 lg:px-16">
+              <ul className="page-bounds mx-auto grid grid-cols-1 -space-x-px -space-y-px sm:grid-cols-2 lg:grid-cols-4">
                 {sellersPageLinks.map(
                   ({ name, path, icon: Icon }, i) => (
                     <li

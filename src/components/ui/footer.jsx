@@ -10,7 +10,7 @@ import { MinusIcon, PlusIcon } from 'lucide-react'
 export function Footer() {
   return (
     <footer className="relative z-10 flex flex-col bg-neutral text-sm text-neutral-foreground-100 *:-z-0 [&_h5]:font-semibold lg:[&_h5]:my-3 [&_li>h6]:text-xs [&_li>h6]:text-neutral-foreground-100 [&_li]:text-neutral-foreground-200 lg:[&_li]:mb-2 lg:[&_ul]:py-2">
-      <section className="border-b border-b-neutral-foreground-100/30 px-8 py-6 md:px-10 lg:px-16">
+      <section className="page-bounds border-b border-b-neutral-foreground-100/30 py-6">
         <div className="mb-4">
           <Logo />
         </div>
@@ -82,7 +82,7 @@ export function Footer() {
         </div>
       </section>
 
-      <section className="flex flex-col items-start justify-between md:px-8 lg:flex-row lg:px-16">
+      <section className="page-bounds flex flex-col items-start justify-between lg:flex-row">
         <ItemsGroup title="basic navigations">
           {footerLinks.basicNav.map((n) => (
             <li key={n.title}>
@@ -225,7 +225,7 @@ export function Footer() {
         </div>
       </section>
 
-      <section className="flex flex-col-reverse items-center justify-between gap-8 bg-neutral-100 px-8 pb-20 pt-8 text-center text-neutral-foreground-300 md:flex-row md:items-end md:px-8 md:text-left lg:px-16">
+      <section className="page-bounds flex flex-col-reverse items-center justify-between gap-8 bg-neutral-100 pb-20 pt-8 text-center text-neutral-foreground-300 md:flex-row md:items-end md:text-left">
         <div className="space-y-6">
           <p>&copy; 2023 E-COMMERCE | B2B &B2C</p>
           <p>
