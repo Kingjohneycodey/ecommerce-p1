@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom'
-import { Rating } from '../ui/Rating'
+import { Rating } from '@/components/ui/Rating'
 import { cn } from '@/lib/utils'
 import {
   CheckCircle2Icon,

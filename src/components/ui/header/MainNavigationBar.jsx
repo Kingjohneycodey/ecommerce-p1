@@ -11,11 +11,11 @@ import {
   MenuIcon,
 } from 'lucide-react'
 import { Link } from 'react-router-dom'
-import { Tooltip } from '../Tooltip'
+import { Tooltip } from '@/components/ui/Tooltip'
 import { useState } from 'react'
 import { cn } from '@/lib/utils'
-import { Button } from '../Button'
-import { MobileNav } from '../Nav'
+import { Button } from '@/components/ui/Button'
+import { MobileNav } from '@/components/ui/Nav'
 import { useNavContext } from '@/context/NavContext'
 
 export function MainNavigationBar() {

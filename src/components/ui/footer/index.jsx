@@ -2,7 +2,7 @@ import { Link } from 'react-router-dom'
 import { footerLinks } from '@/lib/data'
 
 import { Logo } from '@/components/Logo'
-import { Button } from '../Button'
+import { Button } from '@/components/ui/Button'
 import { cn } from '@/lib/utils'
 import { useState } from 'react'
 import { MinusIcon, PlusIcon } from 'lucide-react'

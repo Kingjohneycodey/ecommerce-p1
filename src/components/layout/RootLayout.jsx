@@ -1,7 +1,7 @@
 import { Outlet } from 'react-router-dom'
-import { HeaderContainer } from '../ui/header'
-import { Footer } from '../ui/footer'
-import SideNavButtons from '../ui/SideNavButtons'
+import { HeaderContainer } from '@/components/ui/header'
+import { Footer } from '@/components/ui/footer'
+import SideNavButtons from '@/components/ui/SideNavButtons'
 import { NavContextProvider } from '@/context/NavContext'
 
 export default function RootLayout() {

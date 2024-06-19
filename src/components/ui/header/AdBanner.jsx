@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import { Button } from '../Button'
+import { Button } from '@/components/ui/Button'
 import { XIcon } from 'lucide-react'
 
 export function AdBanner() {
