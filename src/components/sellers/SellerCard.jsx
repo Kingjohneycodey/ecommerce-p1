@@ -1,7 +1,10 @@
 import { Link } from 'react-router-dom'
 import { Rating } from '../ui/Rating'
 import { cn } from '@/lib/utils'
-import { ChevronRightIcon } from 'lucide-react'
+import {
+  CheckCircle2Icon,
+  ChevronRightIcon,
+} from 'lucide-react'
 
 export function SellerCard({
   id,
@@ -10,6 +13,7 @@ export function SellerCard({
   rating,
   reviews,
   className,
+  verified,
 }) {
   return (
     <div
@@ -18,12 +22,19 @@ export function SellerCard({
         className
       )}
     >
-      <div className="mx-auto mb-3 size-28 overflow-hidden rounded-full max-sm:size-20">
-        <img
-          src={image}
-          alt={name}
-          className="size-full scale-100 transition-transform duration-200 ease-out group-hover/sellerCard:scale-110"
-        />
+      <div className="relative mx-auto w-fit">
+        <div className="mx-auto mb-3 size-28 overflow-hidden rounded-full max-sm:size-20">
+          <img
+            src={image}
+            alt={name}
+            className="size-full scale-100 transition-transform duration-200 ease-out group-hover/sellerCard:scale-110"
+          />
+        </div>
+        {verified && (
+          <span className="absolute right-2 top-1 inline-block rounded-full bg-blue-500 p-px">
+            <CheckCircle2Icon className="size-5 text-white" />
+          </span>
+        )}
       </div>
 
       <h2 className="mb-8 line-clamp-2 w-full truncate text-balance px-2 font-bold">
