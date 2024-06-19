@@ -11,7 +11,7 @@ export default function RootLayout() {
         <HeaderContainer />
         <SideNavButtons />
 
-        <main className="flex-1 bg-background">
+        <main className="flex-1 bg-background antialiased">
           <Outlet />
         </main>
 

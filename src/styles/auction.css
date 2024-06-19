@@ -1,5 +1,5 @@
 /* 
-  ⚠️⚠️ STYLING THE ROOT IN A SMALL COMPONENT'S CSS IS AN ANTI-PATTERN ⚠️⚠️
+  ⚠️⚠️ STYLING THE ROOT IN A COMPONENT'S CSS IS AN ANTI-PATTERN ⚠️⚠️
   :root {
       font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
       line-height: 1.5;
