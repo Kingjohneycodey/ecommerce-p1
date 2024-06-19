@@ -52,19 +52,22 @@ export function SellerCard({
       />
 
       <Link
-        className={`group/sellerCardLink relative mx-auto flex w-max items-center gap-8 py-1.5 text-sm font-semibold max-sm:gap-2 max-sm:border max-sm:pr-1 sm:-translate-x-2`}
+        className={`group/sellerCardLink relative mx-auto flex w-max items-center gap-8 py-1.5 text-sm font-semibold max-sm:gap-2 max-sm:pr-1 sm:-translate-x-2`}
         to={`/shop/${name.toLowerCase().replace(' ', '-')}-${id}`}
       >
-        <span className="absolute z-[1] h-full w-8 rounded-2xl bg-accent/20 transition-[width] duration-500 ease-in-out group-hover/sellerCardLink:w-[calc(100%_+_16px)] group-focus/sellerCardLink:w-[calc(100%_+_16px)] max-sm:hidden" />
+        <span className="absolute z-[1] h-full w-8 rounded-2xl bg-accent/20 transition-[width] duration-500 ease-in-out group-hover/sellerCardLink:w-[calc(100%_+_16px)] group-focus/sellerCardLink:w-[calc(100%_+_16px)]" />
         <span
           className={cn(
             'relative z-10 flex place-items-center text-brand-primary',
-            'box-content before:absolute before:left-4 before:top-1/2 before:h-[2px] before:w-0 before:-translate-y-1/2 before:bg-brand-primary before:opacity-0 before:transition-all before:duration-300 before:ease-in before:content-[""] group-hover/sellerCardLink:before:w-4 group-hover/sellerCardLink:before:opacity-100 group-focus/sellerCardLink:before:w-4 group-focus/sellerCardLink:before:opacity-100 max-sm:before:hidden'
+            'box-content before:absolute before:left-4 before:top-1/2 before:h-[2px] before:w-0 before:-translate-y-1/2 before:bg-brand-primary before:opacity-0 before:transition-all before:duration-300 before:ease-in before:content-[""] group-hover/sellerCardLink:before:w-4 group-hover/sellerCardLink:before:opacity-100 group-focus/sellerCardLink:before:w-4 group-focus/sellerCardLink:before:opacity-100'
           )}
         >
-          <ChevronRightIcon className="size-5 translate-x-[6px] transition-transform duration-300 ease-in max-sm:translate-x-0 sm:group-hover/sellerCardLink:translate-x-5 sm:group-focus/sellerCardLink:translate-x-5" />
+          <ChevronRightIcon className="size-5 translate-x-[6px] transition-transform duration-300 ease-in group-hover/sellerCardLink:translate-x-5 group-focus/sellerCardLink:translate-x-5" />
         </span>
-        VISIT STORE
+        <span className="max-sm:translate-x-2">
+          {' '}
+          VISIT STORE
+        </span>
       </Link>
     </div>
   )

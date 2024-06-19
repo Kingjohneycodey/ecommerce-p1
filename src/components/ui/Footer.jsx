@@ -82,7 +82,7 @@ export function Footer() {
         </div>
       </section>
 
-      <section className="page-bounds flex flex-col items-start justify-between lg:flex-row">
+      <section className="flex flex-col items-start justify-between lg:flex-row">
         <ItemsGroup title="basic navigations">
           {footerLinks.basicNav.map((n) => (
             <li key={n.title}>
@@ -262,7 +262,7 @@ function ItemsGroup({ title, children }) {
     <div className="max-lg:w-full max-lg:border-b max-lg:border-b-neutral-foreground-100/30">
       <h5
         onClick={toggleOpen}
-        className="capitalize max-lg:flex max-lg:w-full max-lg:items-center max-lg:justify-between max-lg:bg-neutral-100 max-lg:px-8 max-lg:py-8 max-lg:text-neutral-foreground-200 lg:uppercase"
+        className="page-bounds capitalize max-lg:flex max-lg:w-full max-lg:items-center max-lg:justify-between max-lg:bg-neutral-100 max-lg:px-8 max-lg:py-8 max-lg:text-neutral-foreground-200 lg:uppercase"
       >
         <span>{title}</span>
         <span
@@ -276,7 +276,7 @@ function ItemsGroup({ title, children }) {
       </h5>
       <div
         className={cn(
-          'transition-[max-height] ease-out max-lg:overflow-hidden max-lg:px-8 max-lg:py-0',
+          'page-bounds transition-[max-height] ease-out max-lg:overflow-hidden max-lg:px-8 max-lg:py-0',
           isOpen
             ? 'max-h-96 duration-[2.5s]'
             : 'tran duration-400 max-h-0'

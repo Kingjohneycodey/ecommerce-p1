@@ -83,7 +83,7 @@
 }
 
 .page-bounds {
-  @apply px-8 lg:px-20;
+  @apply px-4 md:px-8 lg:px-20;
 }
 
 #particlesBg {
