@@ -2,9 +2,9 @@ import {
   Avatar,
   AvatarFallback,
   AvatarImage,
-} from '@/components/ui/Avatar'
+} from '@/components/ui/_Avatar'
 import { UserIcon } from 'lucide-react'
-import { Separator } from './ui/Separator'
+import { Separator } from './ui/_Separator'
 import { Link } from 'react-router-dom'
 
 function UserAuth() {

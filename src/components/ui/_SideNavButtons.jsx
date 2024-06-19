@@ -1,5 +1,5 @@
 import { cn } from '@/lib/utils'
-import { Button } from '@/components/ui/Button'
+import { Button } from '@/components/ui/_Button'
 import { sideLinks } from '@/lib/data'
 import {
   ChevronRightIcon,

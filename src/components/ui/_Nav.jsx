@@ -2,7 +2,7 @@ import { navLinks } from '@/lib/data'
 import { cn } from '@/lib/utils'
 import { NavLink } from 'react-router-dom'
 import UserAuth from '@/components/UserAuth'
-import { Button } from '@/components/ui/Button'
+import { Button } from '@/components/ui/_Button'
 import { XIcon } from 'lucide-react'
 import { useNavContext } from '@/context/NavContext'
 
