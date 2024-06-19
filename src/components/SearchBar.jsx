@@ -1,5 +1,5 @@
 import { SearchIcon } from 'lucide-react'
-import { Input } from './ui/_input'
+import { Input } from './ui/Input'
 
 export function SearchBar() {
   return (

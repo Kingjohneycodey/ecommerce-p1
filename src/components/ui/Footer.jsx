@@ -1,8 +1,8 @@
 import { Link } from 'react-router-dom'
 import { footerLinks } from '@/lib/data'
 
-import { Logo } from '../_logo'
-import { Button } from './_button'
+import { Logo } from '../Logo'
+import { Button } from './Button'
 import { cn } from '@/lib/utils'
 import { useState } from 'react'
 import { MinusIcon, PlusIcon } from 'lucide-react'

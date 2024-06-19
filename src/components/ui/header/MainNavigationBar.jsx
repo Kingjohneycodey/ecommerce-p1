@@ -1,4 +1,4 @@
-import { Logo } from '@/components/_logo'
+import { Logo } from '@/components/Logo'
 import { ModeToggle } from '@/components/ModeToggle'
 import { SearchBar } from '@/components/SearchBar'
 import UserAuth from '@/components/UserAuth'
@@ -11,11 +11,11 @@ import {
   MenuIcon,
 } from 'lucide-react'
 import { Link } from 'react-router-dom'
-import { Tooltip } from '../_tooltip'
+import { Tooltip } from '../Tooltip'
 import { useState } from 'react'
 import { cn } from '@/lib/utils'
-import { Button } from '../_button'
-import { MobileNav } from '../_nav'
+import { Button } from '../Button'
+import { MobileNav } from '../Nav'
 import { useNavContext } from '@/context/NavContext'
 
 export function MainNavigationBar() {
