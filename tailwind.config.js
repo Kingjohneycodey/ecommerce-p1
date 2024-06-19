@@ -2,10 +2,10 @@
 export default {
   content: ['./index.html', './src/**/*.{js,ts,jsx,tsx}'],
   theme: {
+    fontFamily: {
+      sans: ['Public Sans', 'sans-serif', 'system-ui'],
+    },
     extend: {
-      fontFamily: {
-        sans: '"Public Sans", sans-serif, system-ui',
-      },
       colors: {
         background:
           'hsl(var(--color-background) / <alpha-value>)',

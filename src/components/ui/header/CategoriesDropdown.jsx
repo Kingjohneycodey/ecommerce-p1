@@ -30,10 +30,10 @@ export function CategoriesDropdown({
       <div
         className={cn(
           'absolute left-0 right-0 top-full z-20 flex overflow-auto bg-background font-light text-foreground transition-[height]',
-          isOpen ? 'h-[470px]' : 'h-0'
+          isOpen ? 'h-[495px]' : 'h-0'
         )}
       >
-        <ul>
+        <ul className="w-full">
           {categories.map((cat) => (
             <li
               key={cat.id}
@@ -49,11 +49,13 @@ export function CategoriesDropdown({
                 }}
               >
                 <img
-                  className="h-6 w-6 object-contain group-hover:brightness-90"
+                  className="size-5 object-contain group-hover:brightness-90"
                   src={cat.icon}
                   alt={`${cat.name} icon`}
                 />
-                <span className="p-4">{cat.name}</span>
+                <span className="px-4 py-3">
+                  {cat.name}
+                </span>
               </Link>
             </li>
           ))}

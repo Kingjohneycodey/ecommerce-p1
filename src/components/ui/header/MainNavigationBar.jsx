@@ -11,11 +11,11 @@ import {
   MenuIcon,
 } from 'lucide-react'
 import { Link } from 'react-router-dom'
-import { Tooltip } from '../Tooltip'
+import { Tooltip } from '@/components/ui/Tooltip'
 import { useState } from 'react'
 import { cn } from '@/lib/utils'
-import { Button } from '../Button'
-import { MobileNav } from '../Nav'
+import { Button } from '@/components/ui/Button'
+import { MobileNav } from '@/components/ui/Nav'
 import { useNavContext } from '@/context/NavContext'
 
 export function MainNavigationBar() {
@@ -28,7 +28,7 @@ export function MainNavigationBar() {
 
   return (
     <>
-      <div className="relative z-40 flex max-h-14 min-h-12 items-center justify-between gap-4 bg-background px-8 py-4 max-lg:overflow-hidden lg:px-16">
+      <div className="page-bounds relative z-40 flex max-h-14 min-h-12 items-center justify-between gap-4 bg-background py-4 max-lg:overflow-hidden">
         <div className="flex gap-2">
           <Button
             size="icon"

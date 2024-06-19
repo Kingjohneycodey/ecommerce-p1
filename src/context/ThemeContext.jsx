@@ -5,7 +5,8 @@ const initialState = {
   setTheme: () => null,
 }
 
-export const ThemeProviderContext = createContext(initialState)
+export const ThemeProviderContext =
+  createContext(initialState)
 
 export function ThemeProvider({
   children,
@@ -17,14 +18,24 @@ export function ThemeProvider({
     () => localStorage.getItem(storageKey) || defaultTheme
   )
 
+  const [actualTheme, setActualTheme] = useState(
+    theme === 'system'
+      ? window.matchMedia('(prefers-color-scheme: dark)')
+          .matches
+        ? 'dark'
+        : 'light'
+      : theme
+  )
+
   useEffect(() => {
     const root = window.document.documentElement
 
     root.classList.remove('light', 'dark')
 
     if (theme === 'system') {
-      const systemTheme = window.matchMedia('(prefers-color-scheme: dark)')
-        .matches
+      const systemTheme = window.matchMedia(
+        '(prefers-color-scheme: dark)'
+      ).matches
         ? 'dark'
         : 'light'
 
@@ -40,7 +51,17 @@ export function ThemeProvider({
     setTheme: (theme) => {
       localStorage.setItem(storageKey, theme)
       setTheme(theme)
+      setActualTheme(() =>
+        theme === 'system'
+          ? window.matchMedia(
+              '(prefers-color-scheme: dark)'
+            ).matches
+            ? 'dark'
+            : 'light'
+          : theme
+      )
     },
+    actualTheme,
   }
 
   return (

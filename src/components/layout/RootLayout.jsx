@@ -10,9 +10,11 @@ export default function RootLayout() {
       <div className="flex min-h-screen flex-col bg-background text-foreground">
         <HeaderContainer />
         <SideNavButtons />
-        <main className="flex-1">
+
+        <main className="flex-1 bg-background antialiased">
           <Outlet />
         </main>
+
         <Footer />
       </div>
     </NavContextProvider>

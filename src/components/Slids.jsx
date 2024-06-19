@@ -4,11 +4,11 @@ import { A11y, Autoplay } from 'swiper/modules'
 import 'swiper/css'
 import 'swiper/css/autoplay'
 
-import back from '../assets/back.png'
-import earn from '../assets/earn.png'
-import exclusive from '../assets/exclusive.png'
-import love from '../assets/love.png'
-import win from '../assets/win.png'
+import back from '@/assets/back.png'
+import earn from '@/assets/earn.png'
+import exclusive from '@/assets/exclusive.png'
+import love from '@/assets/love.png'
+import win from '@/assets/win.png'
 
 const data = [
   {

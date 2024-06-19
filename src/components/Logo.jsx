@@ -14,9 +14,9 @@ export function Logo() {
         orientation="vertical"
       />
 
-      <h1 className="text-xl font-black tracking-wider text-brand-secondary max-[420px]:hidden lg:text-2xl">
+      <span className="text-xl font-black tracking-wider text-brand-secondary max-[420px]:hidden lg:text-2xl">
         E-COMMERCE
-      </h1>
+      </span>
     </div>
   )
 }
