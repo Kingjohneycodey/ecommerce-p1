@@ -4,6 +4,8 @@ import RootLayout from './components/layout/RootLayout'
 // pages
 import HomePage from './pages/HomePage'
 import SellersPage from './pages/SellersPage'
+import TopDeals from './pages/Topdeals'
+import { PageNotFound } from './pages/PageNotFound'
 
 const routes = createBrowserRouter([
   {
@@ -17,6 +19,17 @@ const routes = createBrowserRouter([
       },
       { path: '/others', element: <div>Other page</div> },
     ],
+  },
+
+  {
+    path: 'deal',
+    element: <RootLayout />,
+    children: [{ index: true, element: <TopDeals /> }],
+  },
+
+  {
+    path: '*',
+    element: <PageNotFound />,
   },
 ])
 
