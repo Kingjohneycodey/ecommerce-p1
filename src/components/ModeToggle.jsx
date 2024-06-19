@@ -1,12 +1,12 @@
 import { Moon, Sun, LaptopIcon } from 'lucide-react'
 
-import { buttonVariants } from '@/components/ui/_Button'
+import { buttonVariants } from '@/components/ui/Button'
 import {
   DropdownMenu,
   DropdownMenuContent,
   DropdownMenuItem,
   DropdownMenuTrigger,
-} from '@/components/ui/_DropdownMenu'
+} from '@/components/ui/DropdownMenu'
 import { useTheme } from '@/hooks/use-theme'
 import { cn } from '@/lib/utils'
 

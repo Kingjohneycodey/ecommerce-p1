@@ -14,7 +14,7 @@ import { Link } from 'react-router-dom'
 import { Tooltip } from '@/components/ui/Tooltip'
 import { useState } from 'react'
 import { cn } from '@/lib/utils'
-import { Button } from '@/components/ui/_Button'
+import { Button } from '@/components/ui/Button'
 import { MobileNav } from '@/components/ui/Nav'
 import { useNavContext } from '@/context/NavContext'
 
