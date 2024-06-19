@@ -108,7 +108,7 @@ const data = [
 
 export const Deals = () => {
   return (
-    <section className="bg-white text-white">
+    <section className="text-white">
       <div className="mx-auto flex max-w-[1900px] flex-col px-10 py-8 font-sans font-bold">
         <img src={deals} />
         <div className="relative bg-[#0f551f] px-10 pb-14 pt-20">
