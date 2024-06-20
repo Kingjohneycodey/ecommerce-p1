@@ -15,7 +15,7 @@ function FeaturedCate() {
             <div className='featuredDetails'>
               <img src={item.img} alt="" className=' featuredImg' />
               <div className='featuredName'>
-                <p >{item.title} </p>
+                <p >{item.title}. </p>
               </div>
             </div>
           )
