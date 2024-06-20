@@ -1,0 +1,85 @@
+.productCard,
+img {
+  height: fit-content;
+  cursor: pointer;
+  object-fit: cover;
+  width: 200px;
+}
+.productCard {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 100%;
+}
+
+.pcImg {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.productCard {
+  border: 1px solid rgb(238, 233, 233);
+  padding-top: 40px;
+  padding-bottom: 40px;
+  background-color: white;
+}
+
+.PCdetails {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding-left: 10px;
+  padding-right: 10px;
+  flex-direction: column;
+  align-items: center;
+  gap: 17px;
+}
+
+.PCprice {
+  display: flex;
+  gap: 10px;
+  width: 7rem;
+  justify-content: end;
+}
+
+.PCprice1 {
+  text-decoration: line-through;
+  color: gray;
+}
+
+.PCprice2 {
+  font-weight: bolder;
+  color: #e62e04;
+}
+
+.pc {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.pcAdd {
+  position: absolute;
+  top: 140px;
+  right: 18px;
+  left: 0;
+
+  background-color: black;
+  color: white;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+
+  transition: opacity 0.3s ease; /* Smooth transition */
+}
+
+.pcAdd:hover {
+  opacity: 0.8; /* 80% opacity */
+}
