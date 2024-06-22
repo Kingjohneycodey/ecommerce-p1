@@ -1,0 +1,27 @@
+.pro {
+  padding-left: 10%;
+  padding-right: 10%;
+}
+.productCards {
+  display: flex;
+  cursor: pointer;
+  margin-bottom: 50px;
+}
+
+.productTitle {
+  font-size: 20px;
+}
+
+.productCards::-webkit-scrollbar {
+  display: none;
+}
+
+.BestCards {
+  display: flex;
+  cursor: pointer;
+  margin-bottom: 50px;
+}
+
+.bestTitle {
+  font-size: 20px;
+}
