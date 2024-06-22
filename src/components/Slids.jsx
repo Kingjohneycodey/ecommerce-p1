@@ -53,10 +53,10 @@ export default function Slids() {
       >
         {data.map((user, i) => (
           <SwiperSlide key={i}>
-            <div className="w-[120%]">
+            <div className="">
               <LazyLoadImage
                 src={user.image}
-                className=""
+                className="aspect-[8/3] object-cover md:aspect-auto"
                 effect="blur"
               />
             </div>
