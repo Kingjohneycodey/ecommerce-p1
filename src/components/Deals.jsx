@@ -106,13 +106,13 @@ const data = [
   },
 ]
 
-export const Deals = () => {
+const Deals = () => {
   return (
     <section className="text-white">
       <div className="mx-auto flex h-full max-w-[1900px] flex-col overflow-hidden px-6 py-4 font-sans font-bold md:px-10 md:py-8">
         <img
           src={deals}
-          className="scale-x-120 aspect-[28/10] object-cover md:aspect-auto"
+          className="aspect-[28/10] object-cover md:aspect-auto"
         />
         <div className="relative border-t-2 bg-[#0f551f] px-5 pb-6 pt-20 md:px-10 md:pb-14">
           <p className="absolute right-[65px] top-[30px] text-[14px] hover:text-neutral-400 md:text-[16.8px]">
@@ -170,3 +170,5 @@ export const Deals = () => {
     </section>
   )
 }
+
+export default Deals

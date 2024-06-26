@@ -1,5 +1,4 @@
-.productCard,
-img {
+.productCard {
   height: fit-content;
   cursor: pointer;
   object-fit: cover;
@@ -12,7 +11,7 @@ img {
   width: 100%;
 }
 
-.pcImg {
+.pc {
   display: flex;
   flex-direction: column;
   justify-content: center;
