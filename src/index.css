@@ -22,7 +22,7 @@
 
     --color-secondary: 240deg 3.77% 58.43%; /* for header icons */
 
-    --color-accent: 151.09deg 74.32 29.02; /* green */
+    --color-accent: 151.09deg 74.32% 29.02%; /* green */
     --color-accent-foreground: 0 0% 98%;
 
     --color-brand-primary: 11.15deg 96.58% 45.88%;
