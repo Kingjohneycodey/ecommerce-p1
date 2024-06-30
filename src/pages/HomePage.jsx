@@ -6,6 +6,7 @@ import FeaturedCate from '@/components/Featuredcats/FeaturedCate'
 import Ads from '@/components/Ads/Ads'
 import Product from '@/components/Product/Product'
 import TopBrands from '@/components/TopBrands'
+import { TopSellersSection } from '@/components/sellers/TopSellersSection'
 
 const HomePage = () => {
   return (
@@ -17,6 +18,7 @@ const HomePage = () => {
       <Product />
       <Auction />
       <DiscountBanner />
+      <TopSellersSection />
       <TopBrands />
     </div>
   )

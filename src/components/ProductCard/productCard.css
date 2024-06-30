@@ -1,4 +1,7 @@
-.productCard {
+
+.productCard,
+/* @asenadaniel give your images unique classNames, STOP STYLING ELEMENTS DIRECTLY FGS!! */
+.productCard img {
   height: fit-content;
   cursor: pointer;
   object-fit: cover;
