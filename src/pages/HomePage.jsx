@@ -5,7 +5,6 @@ import { Deals } from '@/components/Deals'
 import FeaturedCate from '@/components/Featuredcats/FeaturedCate'
 import Ads from '@/components/Ads/Ads'
 import Product from '@/components/Product/Product'
-import TopBrands from '@/components/TopBrands'
 
 
 const HomePage = () => {
@@ -18,7 +17,7 @@ const HomePage = () => {
       <Product />
       <Auction />
       <DiscountBanner />
-      <TopBrands/>
+     
     </div>
   )
 }
