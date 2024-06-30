@@ -1,6 +1,10 @@
 import { Swiper, SwiperSlide } from 'swiper/react'
 import { A11y, Autoplay } from 'swiper/modules'
 
+//lazy loading images
+import { LazyLoadImage } from 'react-lazy-load-image-component'
+import 'react-lazy-load-image-component/src/effects/blur.css'
+
 import 'swiper/css'
 import 'swiper/css/autoplay'
 
@@ -49,8 +53,12 @@ export default function Slids() {
       >
         {data.map((user, i) => (
           <SwiperSlide key={i}>
-            <div className="w-[120%]">
-              <img src={user.image} className="" />
+            <div className="">
+              <LazyLoadImage
+                src={user.image}
+                className="aspect-[8/3] object-cover md:aspect-auto"
+                effect="blur"
+              />
             </div>
           </SwiperSlide>
         ))}
