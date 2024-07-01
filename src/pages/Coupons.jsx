@@ -75,7 +75,7 @@ function Coupons() {
               <div key={i} className='flex flex-col items-center w-1/2 md:w-1/4 p-4 '>
                 <div className=' cursor-pointer'>
 
-                  {item.icon}
+                  {item.icon}.
                 </div>
                 <p className='text-center mt-2 cursor-pointer'>{item.text}</p>
               </div>
