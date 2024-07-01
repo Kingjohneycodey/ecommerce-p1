@@ -6,6 +6,7 @@ import HomePage from './pages/HomePage'
 import SellersPage from './pages/SellersPage'
 import TopDeals from './pages/Topdeals'
 import { PageNotFound } from './pages/PageNotFound'
+import Coupons from './pages/Coupons'
 
 const routes = createBrowserRouter([
   {
@@ -17,7 +18,14 @@ const routes = createBrowserRouter([
         path: '/sellers',
         element: <SellersPage />,
       },
-      { path: '/others', element: <div>Other page</div> },
+      {
+        path: '/coupons',
+        element: <Coupons />,
+      },
+      {
+        path: '/others',
+        element: <div>Other page</div>
+      },
     ],
   },
   {

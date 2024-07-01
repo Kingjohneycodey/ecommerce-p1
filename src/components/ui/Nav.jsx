@@ -21,7 +21,7 @@ export function DesktopNav() {
                 cn(
                   'inline-flex min-w-max items-center bg-transparent px-4 py-4 transition hover:bg-neutral/20',
                   isActive &&
-                    'hover:bg-neutral-30 bg-neutral/30'
+                  'hover:bg-neutral-30 bg-neutral/30'
                 )
               }
             >
