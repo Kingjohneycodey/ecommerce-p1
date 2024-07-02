@@ -1,5 +1,7 @@
+
 .productCard,
-img {
+/* @asenadaniel give your images unique classNames, STOP STYLING ELEMENTS DIRECTLY FGS!! */
+.productCard img {
   height: fit-content;
   cursor: pointer;
   object-fit: cover;
@@ -12,7 +14,7 @@ img {
   width: 100%;
 }
 
-.pcImg {
+.pc {
   display: flex;
   flex-direction: column;
   justify-content: center;
