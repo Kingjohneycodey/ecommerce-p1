@@ -8,6 +8,7 @@ import Product from '@/components/Product/Product'
 import TopBrands from '@/components/TopBrands'
 import { TopSellersSection } from '@/components/sellers/TopSellersSection'
 
+
 const HomePage = () => {
   return (
     <div>
