@@ -106,13 +106,16 @@ const data = [
   },
 ]
 
-export const Deals = () => {
+const Deals = () => {
   return (
-    <section className="bg-white text-white">
-      <div className="mx-auto flex max-w-[1900px] flex-col px-10 py-8 font-sans font-bold">
-        <img src={deals} />
-        <div className="relative bg-[#0f551f] px-10 pb-14 pt-20">
-          <p className="absolute right-[65px] top-[30px] text-[16.8px] hover:text-neutral-400">
+    <section className="text-white">
+      <div className="mx-auto flex h-full max-w-[1900px] flex-col overflow-hidden px-6 py-4 font-sans font-bold md:px-10 md:py-8">
+        <img
+          src={deals}
+          className="aspect-[28/10] object-cover md:aspect-auto"
+        />
+        <div className="relative border-t-2 bg-[#0f551f] px-5 pb-6 pt-20 md:px-10 md:pb-14">
+          <p className="absolute right-[65px] top-[30px] text-[14px] hover:text-neutral-400 md:text-[16.8px]">
             <Link to="/deal">View All</Link>
           </p>
           <Swiper
@@ -125,24 +128,35 @@ export const Deals = () => {
               disableOnInteraction: false,
               stopOnLastSlide: false,
             }}
+            breakpoints={{
+              640: {
+                slidesPerView: 2,
+              },
+              768: {
+                slidesPerView: 4,
+              },
+              1024: {
+                slidesPerView: 5,
+              },
+            }}
             // onSwiper={(swiper) => console.log(swiper)}
             // onSlideChange={() => console.log('slide change')}
           >
             {data.map((user, i) => (
               <SwiperSlide key={i}>
-                <div className="flex flex-col items-center justify-center gap-5">
-                  <div className="w-[46%] overflow-hidden rounded-full">
+                <div className="flex flex-col items-center justify-center gap-3 md:gap-5">
+                  <div className="w-[33%] overflow-hidden rounded-full md:w-[46%]">
                     <img
                       src={user.img}
                       className="duration-300 ease-in-out hover:scale-110"
                     />
                   </div>
-                  <div className="text-center">
-                    <p className="mb-1 text-[20.8px]">
+                  <div className="flex flex-col gap-1 text-center">
+                    <p className="text-[16px] md:text-[20.8px]">
                       <span>&#8358;</span>
                       {user.price}
                     </p>
-                    <p className="text-[18.5px] text-neutral-300 line-through">
+                    <p className="text-[14px] text-neutral-300 line-through md:text-[18.5px]">
                       {user.Promo && <span>&#8358;</span>}
                       {user.Promo && user.discount}
                     </p>
@@ -156,3 +170,5 @@ export const Deals = () => {
     </section>
   )
 }
+
+export default Deals
