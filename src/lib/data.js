@@ -208,7 +208,7 @@ export const footerLinks = {
   ],
 }
 
-export const sellersPageLinks = [
+export const policiesLinks = [
   {
     icon: ScrollTextIcon,
     name: 'Terms and conditions',

@@ -1,5 +1,4 @@
 import { createBrowserRouter } from 'react-router-dom'
-import RootLayout from './components/layout/RootLayout'
 
 // pages
 import HomePage from './pages/HomePage'
@@ -7,24 +6,26 @@ import SellersPage from './pages/SellersPage'
 import TopDeals from './pages/Topdeals'
 import { PageNotFound } from './pages/PageNotFound'
 import Brands from './pages/BrandsPage'
+import App from './App'
 
 const routes = createBrowserRouter([
   {
     path: '/',
-    element: <RootLayout />,
+    element: <App />,
     children: [
-      { index: true, element: <HomePage /> },
+      {
+        index: true,
+        element: <HomePage />,
+      },
       {
         path: '/sellers',
         element: <SellersPage />,
       },
-      { path: '/others', element: <div>Other page</div> },
+      {
+        path: '/deal',
+        element: <TopDeals />,
+      },
     ],
-  },
-  {
-    path: 'deal',
-    element: <RootLayout />,
-    children: [{ index: true, element: <TopDeals /> }],
   },
   {
     path: '*',
@@ -32,11 +33,7 @@ const routes = createBrowserRouter([
   },
   {
     path: '/brands',
-    element: <Brands/>,
-  },
-  {
-    path: '*',
-    element: <PageNotFound />,
+    element: <Brands />,
   },
 ])
 

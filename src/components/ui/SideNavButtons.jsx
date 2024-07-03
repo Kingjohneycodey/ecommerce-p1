@@ -9,7 +9,7 @@ import { Link } from 'react-router-dom'
 import { useState } from 'react'
 import { useNavContext } from '@/context/NavContext'
 
-export default function SideNavButtons() {
+export function SideNavButtons() {
   const { navOpen } = useNavContext()
   const [isOpen, setIsOpen] = useState(false)
 
@@ -44,7 +44,7 @@ export default function SideNavButtons() {
               <Button
                 size="icon"
                 className={cn(
-                  'group relative aspect-square rounded-full bg-transparent shadow-lg hover:bg-transparent'
+                  'group relative aspect-square rounded-full bg-transparent hover:bg-transparent'
                 )}
                 asChild
               >
@@ -68,7 +68,7 @@ export default function SideNavButtons() {
 
                     <span
                       className={cn(
-                        'absolute left-[40%] top-1/2 z-40 flex h-12 -translate-y-1/2 items-center justify-between overflow-hidden rounded-r-full bg-brand-primary py-2 transition-all duration-500 ease-out',
+                        'absolute left-[40%] top-1/2 z-40 flex h-12 -translate-y-1/2 items-center justify-between overflow-hidden rounded-r-full bg-brand-primary py-2 shadow-md shadow-black/40 transition-all duration-500 ease-out',
                         'w-0 pl-7',
                         'group-hover:w-40'
                       )}
