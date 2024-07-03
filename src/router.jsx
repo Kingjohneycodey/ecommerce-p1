@@ -7,6 +7,7 @@ import SellersPage from './pages/SellersPage'
 import TopDeals from './pages/Topdeals'
 import { PageNotFound } from './pages/PageNotFound'
 import Brands from './pages/BrandsPage'
+import Coupons from './pages/Coupons'
 
 const routes = createBrowserRouter([
   {
@@ -17,6 +18,10 @@ const routes = createBrowserRouter([
       {
         path: '/sellers',
         element: <SellersPage />,
+      },
+      {
+        path: '/coupons',
+        element: <Coupons />,
       },
       { path: '/others', element: <div>Other page</div> },
     ],
@@ -32,7 +37,7 @@ const routes = createBrowserRouter([
   },
   {
     path: '/brands',
-    element: <Brands/>,
+    element: <Brands />,
   },
   {
     path: '*',
