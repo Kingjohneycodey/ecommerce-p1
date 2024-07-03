@@ -23,6 +23,10 @@ const routes = createBrowserRouter([
         path: '/coupons',
         element: <Coupons />,
       },
+      {
+        path: '/others',
+        element: <div>Other page</div>
+      },
       { path: '/others', element: <div>Other page</div> },
     ],
   },
