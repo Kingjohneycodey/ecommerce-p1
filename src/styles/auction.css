@@ -18,44 +18,55 @@ a {
   text-decoration: none;
 }
 .auction {
-  padding: 0 4.5rem;
+  padding: 0 1rem;
+  display: flex;
+  flex-direction: column;
 }
 .auction h1 {
-  font-size: 22px;
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 5px;
 }
 .main img {
-  width: 400px;
+  border-radius: 0;
+  width: 100%;
+  line-height: 1.8;
+
 }
 
-.auction-card {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
+.auction{
+
 }
 .products {
   display: flex;
   flex-direction: column;
-  margin-left: 40px;
+  padding: 25px;
+  margin-left: 25px;
 }
 .products img {
-  width: 120px;
+  width: 370px;
   margin-bottom: 50px;
 }
 
 .rice-card .content {
-  border: 1px solid grey;
   display: flex;
   padding-top: 10px;
 }
 .blender-card .content {
-  border: 1px solid grey;
   display: flex;
 }
+.description{
+  width: 100%;
+
+  margin: 0 35px;
+}
 .description .name {
-  font-size: 14px;
-  font-weight: 400;
+  display: none;
 }
 .description h2 {
-  font-size: 13px;
+  margin: 10px 0;
+  font-size: 14px;
+  letter-spacing: 1px;
 }
 .description .bid {
   color: gray;
@@ -77,7 +88,7 @@ a {
   letter-spacing: 1px;
   padding: 8px 10px;
   font-weight: 400;
-  margin-top: 10px;
+  margin: 20px 0;
 }
 .rice-card {
   transition: 0.2s;
@@ -132,4 +143,50 @@ a {
   right: 0;
   bottom: -45px;
   height: 100;
+}
+@media screen and (min-width: 760px) {
+.description .name {
+  display: block;
+  font-size: 14px;
+  font-weight: 400;
+}
+.products img {
+  width: 270px;
+  margin-bottom: 50px;
+}
+
+
+  
+}
+@media screen and (min-width: 900px) {
+  .auction-card {
+    display: block;
+  grid-template-columns: repeat(3, 1fr);
+}
+.auction{
+  padding: 0 4rem;
+}
+.description .name {
+  display: block;
+  font-size: 15px;
+  font-weight: 400;
+}
+.auction{
+  padding: 0 4rem;
+}
+}
+@media screen and (min-width: 1200px) {
+  .auction-card {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+.description .name {
+  display: block;
+  font-size: 15px;
+  font-weight: 400;
+
+}
+.auction{
+  padding: 0 4rem;
+}
 }
