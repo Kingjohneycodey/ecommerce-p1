@@ -23,27 +23,20 @@ const routes = createBrowserRouter([
         path: '/coupons',
         element: <Coupons />,
       },
+            {
+        path: '/deal',
+        element: <TopDeals />,
+      },
+            {
+        path: '/brands',
+        element: <Brands/>,
+      },
       {
         path: '/others',
         element: <div>Other page</div>
       },
       { path: '/others', element: <div>Other page</div> },
     ],
-  },
-  {
-    path: 'deal',
-    element: <RootLayout />,
-    children: [{ index: true, element: <TopDeals /> }],
-  },
-  {
-    path: '*',
-    element: <PageNotFound />,
-  },
-  {
-    path: '/brands',
-    element: <RootLayout />,
-    children: [{ index: true, element: <Brands/>}],
-    element: <Brands />,
   },
   {
     path: '*',
