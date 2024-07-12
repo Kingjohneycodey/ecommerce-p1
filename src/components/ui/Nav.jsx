@@ -1,10 +1,11 @@
 import { navLinks } from '@/lib/data'
 import { cn } from '@/lib/utils'
-import { NavLink } from 'react-router-dom'
+import { NavLink, useLocation } from 'react-router-dom'
 import UserAuth from '@/components/UserAuth'
 import { Button } from '@/components/ui/Button'
 import { XIcon } from 'lucide-react'
 import { useNavContext } from '@/context/NavContext'
+import { useEffect } from 'react'
 
 export function DesktopNav() {
   return (
@@ -21,7 +22,7 @@ export function DesktopNav() {
                 cn(
                   'inline-flex min-w-max items-center bg-transparent px-4 py-4 transition hover:bg-neutral/20',
                   isActive &&
-                    'hover:bg-neutral-30 bg-neutral/30'
+                  'hover:bg-neutral-30 bg-neutral/30'
                 )
               }
             >
@@ -35,9 +36,16 @@ export function DesktopNav() {
 }
 
 export function MobileNav() {
+  const { pathname } = useLocation()
   const { navOpen, setNavOpen } = useNavContext()
 
   const close = () => setNavOpen(false)
+
+  useEffect(() => {
+    close()
+
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [pathname])
 
   return (
     <nav className="block lg:hidden">

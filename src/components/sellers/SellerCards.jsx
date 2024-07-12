@@ -1,7 +1,5 @@
-import placeholder from '@/lib/placeholder.json'
+import { sellers } from '@/lib/placeholder'
 import { SellerCard } from './SellerCard'
-
-const { sellers } = placeholder
 
 export function SellerCards({ className }) {
   // fetch sellers here
@@ -13,8 +11,9 @@ export function SellerCards({ className }) {
       {sellers.map((seller) => (
         <SellerCard
           key={seller.id}
-          {...seller}
+          data={seller}
           className="border bg-background first:z-10 hover:!ml-0 hover:!mr-0 max-sm:flex-1 first:md:-mt-px"
+          shadowOnHover
         />
       ))}
     </div>
