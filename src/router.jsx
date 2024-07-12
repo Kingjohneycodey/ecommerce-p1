@@ -41,6 +41,8 @@ const routes = createBrowserRouter([
   },
   {
     path: '/brands',
+    element: <RootLayout />,
+    children: [{ index: true, element: <Brands/>}],
     element: <Brands />,
   },
   {
