@@ -6,8 +6,8 @@ function ProductCard({ product }) {
   return (
     <div className='productCard'>
       <div className=' pcImg'>
-        <img src={product.img} alt="product Image" />
-        <p className='pcAdd'>Add to Cart</p>
+        <center>       <img src={product.img} alt="product Image" />
+          <p className='pcAdd'>Add to Cart</p></center>
       </div>
       <div className=' PCdetails'>
         <div>

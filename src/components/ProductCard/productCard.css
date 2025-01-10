@@ -1,6 +1,5 @@
 
 .productCard,
-/* @asenadaniel give your images unique classNames, STOP STYLING ELEMENTS DIRECTLY FGS!! */
 .productCard img {
   height: fit-content;
   cursor: pointer;
@@ -12,6 +11,9 @@
   flex-direction: column;
   gap: 20px;
   width: 100%;
+  border: 1px solid rgb(238, 233, 233);
+  padding: 20px;
+  background-color: white;
 }
 
 .pc {
@@ -20,13 +22,6 @@
   justify-content: center;
   align-items: center;
   position: relative;
-}
-
-.productCard {
-  border: 1px solid rgb(238, 233, 233);
-  padding-top: 40px;
-  padding-bottom: 40px;
-  background-color: white;
 }
 
 .PCdetails {
@@ -66,20 +61,18 @@
 }
 
 .pcAdd {
-  position: absolute;
-  top: 140px;
-  right: 18px;
-  left: 0;
+ 
 
   background-color: black;
   color: white;
-  width: 100%;
+  width: 150px;
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 20px;
+  padding: 10px;
+  margin-top: 20px;
 
-  transition: opacity 0.3s ease; /* Smooth transition */
+  transition: opacity 0.3s ease;
 }
 
 .pcAdd:hover {
