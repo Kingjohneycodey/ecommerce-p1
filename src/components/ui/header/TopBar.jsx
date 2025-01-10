@@ -23,11 +23,11 @@ export function TopBar() {
         </Link>
 
         <a
-          href="tel:+234901234567"
+          href="tel:+234901234566"
           size="sm"
           className="header-action ml-4 inline-block"
         >
-          Help Line +234 901 234 567
+          Help Line +234 901 234 566
         </a>
       </div>
     </div>

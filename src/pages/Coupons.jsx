@@ -5,25 +5,25 @@ function Coupons() {
 
   const coupons = [
     {
-      title: 'SVA Global Marketplace',
+      title: 'BUY-HUB Global Marketplace',
       link: 'Visit Store',
       price: '5% OFF',
       desc: '5% OFF on total orders within 3 days of Registration',
-      code: 'Code: SVAWELCOME'
+      code: 'Code: BUY-HUBWELCOME'
     },
     {
-      title: 'SVA Global Marketplace',
+      title: 'BUY-HUB Global Marketplace',
       link: 'Visit Store',
       price: '₦1,500.00 OFF',
-      desc: 'Min Spend ₦75,000.00 from SVA Global Marketplace to get ₦1,500.00 OFF on total orders',
-      code: 'Code: SVAEXCLUSIVE23'
+      desc: 'Min Spend ₦75,000.00 from BUY-HUB Global Marketplace to get ₦1,500.00 OFF on total orders',
+      code: 'Code: BUY-HUBEXCLUSIVE23'
     },
     {
-      title: 'SVA Global Marketplace',
+      title: 'BUY-HUB Global Marketplace',
       link: 'Visit Store',
       price: '4% OFF',
-      desc: 'Min Spend ₦280,000.00 from SVA Global Marketplace to get 4% OFF on total orders',
-      code: 'Code: SVASPECIALOFFER88'
+      desc: 'Min Spend ₦280,000.00 from BUY-HUB Global Marketplace to get 4% OFF on total orders',
+      code: 'Code: BUY-HUBSPECIALOFFER88'
     }
   ]
 
@@ -67,7 +67,7 @@ function Coupons() {
       <div className='bg-slate-100 py-12'>
         <div className='px-4'>
           <h1 className='text-xl text-slate-500 font-bold'>Your Ultimate Shopping Destination!</h1>
-          <p className='text-slate-500 mt-4'>Discover unbeatable deals at SVA Global Marketplace – your go-to for B2C & B2B shopping! Enjoy diverse products, exclusive discounts, and our eCommerce Guarantee for a worry-free experience. Whether wholesale or retail, find excellence and exciting auctions. Don't miss out on mega sales and special offers – join us for a limitless online shopping journey!</p>
+          <p className='text-slate-500 mt-4'>Discover unbeatable deals at BUY-HUB Global Marketplace – your go-to for B2C & B2B shopping! Enjoy diverse products, exclusive discounts, and our eCommerce Guarantee for a worry-free experience. Whether wholesale or retail, find excellence and exciting auctions. Don't miss out on mega sales and special offers – join us for a limitless online shopping journey!</p>
         </div>
         <div className='flex flex-wrap justify-around mt-8'>
           {info.map((item, i) => {

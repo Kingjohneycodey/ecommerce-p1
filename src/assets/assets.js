@@ -92,7 +92,7 @@ export const FeaturedCat = [
   },
 
   {
-    title: 'SVA Fashion & Wears',
+    title: 'Fashion & Wears',
     img: fashion
   },
 

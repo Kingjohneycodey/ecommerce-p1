@@ -28,7 +28,7 @@ const SellersPage = () => {
                 Your Ultimate Shopping Destination
               </h3>
               <p className="text-sm text-secondary">
-                Discover unbeatable deals at SVA Global
+                Discover unbeatable deals at BUY-HUB Global
                 Marketplace &#45; your go-to for B2C & B2B
                 shopping! Enjoy diverse products, exclusive
                 discounts, and our eCommerce Guarantee for a

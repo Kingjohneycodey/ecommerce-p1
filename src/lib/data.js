@@ -174,8 +174,8 @@ export const footerLinks = {
     },
     {
       title: 'Phone',
-      desc: '+234 912 345 6789',
-      href: 'tel:+2349123456789',
+      desc: '+234 945 345 6789',
+      href: 'tel:+2349453456789',
     },
     {
       title: 'Email',

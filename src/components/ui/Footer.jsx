@@ -227,14 +227,14 @@ export function Footer() {
 
       <section className="page-bounds flex flex-col-reverse items-center justify-between gap-8 bg-neutral-100 pb-20 pt-8 text-center text-neutral-foreground-300 md:flex-row md:items-end md:text-left">
         <div className="space-y-6">
-          <p>&copy; 2023 E-COMMERCE | B2B &B2C</p>
+          <p>&copy; {new Date().getFullYear()} BUY-SHOP | B2B &B2C</p>
           <p>
             Powered by&nbsp;
             <a
               href="#"
               className="font-semibold text-brand-primary"
             >
-              Starpro Version Affiliate LTD.
+              BUY-SHOP.
             </a>
           </p>
         </div>
